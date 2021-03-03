@@ -6,6 +6,7 @@ public class PlantControler : MonoBehaviour
 {
     public GameObject gobj_Seed, gobj_Sprout, gobj_Flower;
     public GameObject gobj_SeedBotton;
+    public GameObject gobj_FlowerImage;
 
     private bool seedPlanted = false;
     public int amountWater;
@@ -26,6 +27,7 @@ public class PlantControler : MonoBehaviour
         if (amountWater == 2){
             gobj_Sprout.SetActive(false);
             gobj_Flower.SetActive(true);
+            GameManager.flowerPickable = true;
         }
 
     }
@@ -43,8 +45,16 @@ public class PlantControler : MonoBehaviour
         if (GameManager.currentTool == "waterCan" && seedPlanted == true)
         {
             if (amountWater < 2)
-            amountWater++;
-                
+            amountWater = amountWater + BrunnScript.amountOfWaterInCan;
+            BrunnScript.amountOfWaterInCan = 0;
+
+
+        }
+        if (GameManager.flowerPickable == true)
+        {
+            amountWater = 0;
+            gobj_Flower.SetActive(false);
+            gobj_FlowerImage.SetActive(true);
         }
     }
 }

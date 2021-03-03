@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static string currentTool = "none";
+    public static bool flowerPickable;
     // Start is called before the first frame update
     void Start()
     {
