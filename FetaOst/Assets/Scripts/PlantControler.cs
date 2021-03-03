@@ -1,12 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class PlantControler : MonoBehaviour
 {
+
+    
+
     public GameObject gobj_Seed, gobj_Sprout, gobj_Flower;
     public GameObject gobj_SeedBotton;
-    public GameObject gobj_FlowerImage;
+    
+    
+    public bool haveSeed;
 
     private bool seedPlanted = false;
     public int amountWater;
@@ -19,7 +25,9 @@ public class PlantControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(amountWater == 1)
+        haveSeed = GameManager.flowchart.GetBooleanVariable("HaveSeed");
+
+        if (amountWater == 1)
         {
             gobj_Seed.SetActive(false);
             gobj_Sprout.SetActive(true);
@@ -29,7 +37,9 @@ public class PlantControler : MonoBehaviour
             gobj_Flower.SetActive(true);
             GameManager.flowerPickable = true;
         }
-
+        
+        gobj_SeedBotton.SetActive(haveSeed);
+        
     }
     
     void OnMouseDown()
@@ -37,9 +47,10 @@ public class PlantControler : MonoBehaviour
         if (GameManager.currentTool == "seed")
         {
             gobj_Seed.SetActive(true);
+            GameManager.flowchart.SetBooleanVariable("HaveSeed", false);
             seedPlanted = true;
             GameManager.currentTool = "none";
-            gobj_SeedBotton.SetActive(false);
+            //gobj_SeedBotton.SetActive(false);
         }
 
         if (GameManager.currentTool == "waterCan" && seedPlanted == true)
@@ -54,7 +65,10 @@ public class PlantControler : MonoBehaviour
         {
             amountWater = 0;
             gobj_Flower.SetActive(false);
-            gobj_FlowerImage.SetActive(true);
-        }
+
+            GameManager.flowchart.SetBooleanVariable("HaveFlower", true);
+            GameManager.flowerPickable = false;
+            Debug.Log("Have the flower");
+    }
     }
 }
