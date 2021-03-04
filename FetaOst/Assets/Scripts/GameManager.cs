@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
         FlowerImageSetActive(haveFlower, gobj_FlowerImage);
         kawiLoveValue = flowchart.GetFloatVariable("KwaiLoveMeter");
         unkelLoveValue = flowchart.GetFloatVariable("UnkelLoveMeter");
-
+        
 
         UpdateLoveValue(kawiLoveMeter,kawiLoveValue);
         UpdateLoveValue(unkelLoveMeter, unkelLoveValue);
