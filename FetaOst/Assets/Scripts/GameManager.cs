@@ -14,12 +14,20 @@ public class GameManager : MonoBehaviour
     public static Flowchart flowchart;
     public static bool dailyFlowerGiven;
 
+    public LoveMeter kawiLoveMeter;
+    private float kawiLoveValue;
+
+    public LoveMeter unkelLoveMeter;
+    private float unkelLoveValue;
 
     // Start is called before the first frame update
     void Start()
     {
         //kommer säkert behöva skriva en funktion för hur det funkar
         flowchart = GetComponent<Flowchart>();
+      
+        kawiLoveMeter.SetSize(0f);
+        unkelLoveMeter.SetSize(0f);
 
     }
     
@@ -30,7 +38,12 @@ public class GameManager : MonoBehaviour
         dailyFlowerGiven = flowchart.GetBooleanVariable("DailyFlowerGiven");
         haveFlower = flowchart.GetBooleanVariable("HaveFlower");
         FlowerImageSetActive(haveFlower, gobj_FlowerImage);
-       
+        kawiLoveValue = flowchart.GetFloatVariable("KwaiLoveMeter");
+        unkelLoveValue = flowchart.GetFloatVariable("UnkelLoveMeter");
+
+
+        UpdateLoveValue(kawiLoveMeter,kawiLoveValue);
+        UpdateLoveValue(unkelLoveMeter, unkelLoveValue);
     }
 
     private void FlowerImageSetActive(bool _bool, GameObject _gameObject)
@@ -38,6 +51,11 @@ public class GameManager : MonoBehaviour
         
             _gameObject.SetActive(_bool);
                        
+    }
+
+    void UpdateLoveValue(LoveMeter _loveMeter, float _float)
+    {
+        _loveMeter.SetSize(_float);
     }
     
 

@@ -11,4 +11,9 @@ public class LoveMeter : MonoBehaviour
         
     }
 
+    public void SetSize(float _size)
+    {
+        bar.localScale = new Vector3(_size, 1f);
+    }
+
 }
