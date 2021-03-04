@@ -156,7 +156,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 45a06aaf6905dc14aa2f2915117553e8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 184ce74ae4cbab34083bea2d6af88c1f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -183,7 +183,7 @@ MonoBehaviour:
   gobj_Sprout: {fileID: 4140959030921796432}
   gobj_Flower: {fileID: 4140959032287514722}
   gobj_SeedBotton: {fileID: 0}
-  gobj_FlowerImage: {fileID: 0}
+  haveSeed: 0
   amountWater: 0
 --- !u!65 &4140959031673118524
 BoxCollider:
