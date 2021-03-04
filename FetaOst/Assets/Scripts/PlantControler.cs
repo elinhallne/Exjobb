@@ -50,7 +50,7 @@ public class PlantControler : MonoBehaviour
             GameManager.flowchart.SetBooleanVariable("HaveSeed", false);
             seedPlanted = true;
             GameManager.currentTool = "none";
-            //gobj_SeedBotton.SetActive(false);
+            
         }
 
         if (GameManager.currentTool == "waterCan" && seedPlanted == true)
@@ -68,6 +68,7 @@ public class PlantControler : MonoBehaviour
 
             GameManager.flowchart.SetBooleanVariable("HaveFlower", true);
             GameManager.flowerPickable = false;
+            seedPlanted = false;
             Debug.Log("Have the flower");
     }
     }

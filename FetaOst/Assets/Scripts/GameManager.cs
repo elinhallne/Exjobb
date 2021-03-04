@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     
     
     public static Flowchart flowchart;
+    public static bool dailyFlowerGiven;
 
 
     // Start is called before the first frame update
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        dailyFlowerGiven = flowchart.GetBooleanVariable("DailyFlowerGiven");
         haveFlower = flowchart.GetBooleanVariable("HaveFlower");
         FlowerImageSetActive(haveFlower, gobj_FlowerImage);
        
@@ -34,13 +36,8 @@ public class GameManager : MonoBehaviour
     private void FlowerImageSetActive(bool _bool, GameObject _gameObject)
     {
         
-        if (_bool == true)
-        {
-            _gameObject.SetActive(true);
+            _gameObject.SetActive(_bool);
                        
-        }
-        if (haveFlower == false)
-            _gameObject.SetActive(false);
     }
     
 
