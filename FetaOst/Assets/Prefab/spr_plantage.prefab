@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 4140959031673118513}
   - component: {fileID: 4140959031673118515}
   - component: {fileID: 4140959031673118524}
+  - component: {fileID: 5159979063816464661}
   m_Layer: 0
   m_Name: spr_plantage
   m_TagString: Untagged
@@ -198,6 +199,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 11.48, y: 11.480002, z: 0.20000005}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5159979063816464661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4140959031673118512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21ab57ce408bb1247ba1c47588895b0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flower: {fileID: 0}
 --- !u!1 &4140959032287514722
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,16 +9,12 @@ public class GameManager : MonoBehaviour
     public static bool flowerPickable;
     public bool haveFlower;
     public GameObject gobj_FlowerImage;
-    
-    
+
     public static Flowchart flowchart;
     public static bool dailyFlowerGiven;
 
-    public LoveMeter kawiLoveMeter;
-    private float kawiLoveValue;
-
-    public LoveMeter unkelLoveMeter;
-    private float unkelLoveValue;
+    public Character chr_Kawi;
+    public Character chr_Unkel;
 
     // Start is called before the first frame update
     void Start()
@@ -26,8 +22,9 @@ public class GameManager : MonoBehaviour
         //kommer säkert behöva skriva en funktion för hur det funkar
         flowchart = GetComponent<Flowchart>();
       
-        kawiLoveMeter.SetSize(0f);
-        unkelLoveMeter.SetSize(0f);
+        chr_Kawi.loveMeter.SetSize(0f);
+        chr_Unkel.loveMeter.SetSize(0f);
+     
 
     }
     
@@ -38,12 +35,15 @@ public class GameManager : MonoBehaviour
         dailyFlowerGiven = flowchart.GetBooleanVariable("DailyFlowerGiven");
         haveFlower = flowchart.GetBooleanVariable("HaveFlower");
         FlowerImageSetActive(haveFlower, gobj_FlowerImage);
-        kawiLoveValue = flowchart.GetFloatVariable("KwaiLoveMeter");
-        unkelLoveValue = flowchart.GetFloatVariable("UnkelLoveMeter");
+        chr_Kawi.loveMeterValue = flowchart.GetFloatVariable("KwaiLoveMeter");
+        chr_Unkel.loveMeterValue = flowchart.GetFloatVariable("UnkelLoveMeter");
         
 
-        UpdateLoveValue(kawiLoveMeter,kawiLoveValue);
-        UpdateLoveValue(unkelLoveMeter, unkelLoveValue);
+        chr_Kawi.UpdateLoveValue();
+        chr_Unkel.UpdateLoveValue();
+
+        
+
     }
 
     private void FlowerImageSetActive(bool _bool, GameObject _gameObject)
@@ -53,10 +53,5 @@ public class GameManager : MonoBehaviour
                        
     }
 
-    void UpdateLoveValue(LoveMeter _loveMeter, float _float)
-    {
-        _loveMeter.SetSize(_float);
-    }
-    
 
 }
