@@ -6,7 +6,6 @@ using UnityEngine;
 [System.Serializable]
 public class Plantage : MonoBehaviour
 {
-	Plantage plantage;
 	public Flower flower;
 	private float timeToGrow; //Variabeln som mäter hur långt den har växt
 	public SpriteRenderer spriteRendererFlower;
@@ -15,7 +14,7 @@ public class Plantage : MonoBehaviour
 	
 	public Plantage()
     {
-		plantage = new Plantage();
+		
     }
 
 	/*public void PickingFlower() { 
