@@ -10,6 +10,7 @@ using Fungus;
 public class Character
 {
 	public string name;
+	public GameObject gameObject;
 	public LoveMeter loveMeter;
 	public float loveMeterValue;
 		

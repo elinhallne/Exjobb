@@ -131,6 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 406846302}
   - component: {fileID: 406846301}
+  - component: {fileID: 406846303}
   m_Layer: 0
   m_Name: Plant controller
   m_TagString: Untagged
@@ -152,12 +153,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plantages:
   - {fileID: 4140959031361283189}
-  gobj_Seed: {fileID: 0}
-  gobj_Sprout: {fileID: 0}
-  gobj_Flower: {fileID: 0}
-  gobj_SeedBotton: {fileID: 0}
-  haveSeed: 0
-  amountWater: 0
+  - {fileID: 0}
+  flowers:
+  - {fileID: 1639115430}
 --- !u!4 &406846302
 Transform:
   m_ObjectHideFlags: 0
@@ -168,10 +166,24 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.1, y: 0, z: 9.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1639115431}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &406846303
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406846300}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9801955, y: 0.2, z: 1.7965546}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &596701563
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,7 +197,6 @@ GameObject:
   - component: {fileID: 596701566}
   - component: {fileID: 596701567}
   - component: {fileID: 596701568}
-  - component: {fileID: 596701569}
   - component: {fileID: 596701570}
   - component: {fileID: 596701571}
   m_Layer: 0
@@ -224,13 +235,16 @@ MonoBehaviour:
   haveFlower: 0
   gobj_FlowerImage: {fileID: 1688647163}
   chr_Kawi:
-    name: 
-    loveMeter: {fileID: 0}
+    name: Kawi
+    gameObject: {fileID: 1581470519}
+    loveMeter: {fileID: 8426445694672716529}
     loveMeterValue: 0
   chr_Unkel:
-    name: 
-    loveMeter: {fileID: 0}
+    name: Unkel
+    gameObject: {fileID: 847017112}
+    loveMeter: {fileID: 2042965909}
     loveMeterValue: 0
+  plantControler: {fileID: 406846301}
 --- !u!114 &596701566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,11 +258,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 7151.853, y: -8805.871}
+  scrollPos: {x: 6663.359, y: -9324.517}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.25
+  zoom: 0.34
   scrollViewRect:
     serializedVersion: 2
     x: 0
@@ -260,7 +274,6 @@ MonoBehaviour:
   variables:
   - {fileID: 596701567}
   - {fileID: 596701568}
-  - {fileID: 596701569}
   - {fileID: 596701570}
   - {fileID: 596701571}
   description: 
@@ -303,21 +316,6 @@ MonoBehaviour:
   scope: 1
   key: HaveSeed
   value: 1
---- !u!114 &596701569
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 596701563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scope: 1
-  key: DailyFlowerGiven
-  value: 0
 --- !u!114 &596701570
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1335,6 +1333,24 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &1639115430 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8948100871843573522, guid: f158fa02356804d49b237784288b4bc6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1040050499745092509}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48789f0d3bfe1a045a6423b89b2056e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1639115431 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 851122459309133096, guid: f158fa02356804d49b237784288b4bc6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1040050499745092509}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1688647163
 GameObject:
   m_ObjectHideFlags: 0
@@ -1578,17 +1594,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b33d77cde1a733a449667ed88202b6c9, type: 3}
+--- !u!114 &2042965909 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8169195122056700430, guid: b33d77cde1a733a449667ed88202b6c9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2042965908}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c6e3ca37567fb4292015aba56fa54c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1040050499745092509
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 406846302}
     m_Modifications:
     - target: {fileID: 851122459309133096, guid: f158fa02356804d49b237784288b4bc6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.821434
+      value: -11.921434
       objectReference: {fileID: 0}
     - target: {fileID: 851122459309133096, guid: f158fa02356804d49b237784288b4bc6,
         type: 3}
@@ -1598,22 +1626,22 @@ PrefabInstance:
     - target: {fileID: 851122459309133096, guid: f158fa02356804d49b237784288b4bc6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.9517355
+      value: -3.5482645
       objectReference: {fileID: 0}
     - target: {fileID: 851122459309133096, guid: f158fa02356804d49b237784288b4bc6,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 851122459309133096, guid: f158fa02356804d49b237784288b4bc6,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 851122459309133096, guid: f158fa02356804d49b237784288b4bc6,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 851122459309133096, guid: f158fa02356804d49b237784288b4bc6,
         type: 3}
@@ -1623,7 +1651,7 @@ PrefabInstance:
     - target: {fileID: 851122459309133096, guid: f158fa02356804d49b237784288b4bc6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 851122459309133096, guid: f158fa02356804d49b237784288b4bc6,
         type: 3}
@@ -1804,13 +1832,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4140959031673118515, guid: 880756a8e799d0a4f97eba6faeb7a0c9,
-        type: 3}
-      propertyPath: gobj_SeedBotton
-      value: 
-      objectReference: {fileID: 1085124102}
-    m_RemovedComponents:
-    - {fileID: 4140959031673118515, guid: 880756a8e799d0a4f97eba6faeb7a0c9, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 880756a8e799d0a4f97eba6faeb7a0c9, type: 3}
 --- !u!114 &4140959031361283189 stripped
 MonoBehaviour:
@@ -2037,6 +2059,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b33d77cde1a733a449667ed88202b6c9, type: 3}
+--- !u!114 &8426445694672716529 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8169195122056700430, guid: b33d77cde1a733a449667ed88202b6c9,
+    type: 3}
+  m_PrefabInstance: {fileID: 8426445694672716528}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c6e3ca37567fb4292015aba56fa54c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &9035771226084532478
 PrefabInstance:
   m_ObjectHideFlags: 0

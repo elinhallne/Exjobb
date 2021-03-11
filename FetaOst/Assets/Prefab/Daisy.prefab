@@ -46,7 +46,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Daisy
   growTime: 6
-  sprite: {fileID: 4057700511743267186}
+  spriteRenderer: {fileID: 4057700511743267186}
+  sprites:
+  - {fileID: 21300000, guid: c619e07d2006b5141997c354e286da26, type: 3}
+  - {fileID: 21300000, guid: fb9970feb8b80cc4aa5bea819709d944, type: 3}
+  - {fileID: 21300000, guid: ff7da9b56ed280f41b716734a6ef38e5, type: 3}
 --- !u!212 &4057700511743267186
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -86,14 +90,14 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: c619e07d2006b5141997c354e286da26, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 11.48, y: 11.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0

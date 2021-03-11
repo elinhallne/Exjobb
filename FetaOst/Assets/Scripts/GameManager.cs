@@ -6,15 +6,14 @@ using Fungus;
 public class GameManager : MonoBehaviour
 {
     public static string currentTool = "none";
-    public static bool flowerPickable;
-    public bool haveFlower;
-    public GameObject gobj_FlowerImage;
-
+    
     public static Flowchart flowchart;
-    public static bool dailyFlowerGiven;
-
+    
     public Character chr_Kawi;
     public Character chr_Unkel;
+
+    [SerializeField]
+    private PlantControler plantControler;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +23,8 @@ public class GameManager : MonoBehaviour
       
         chr_Kawi.loveMeter.SetSize(0f);
         chr_Unkel.loveMeter.SetSize(0f);
-     
+
+       
 
     }
     
@@ -32,9 +32,6 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        dailyFlowerGiven = flowchart.GetBooleanVariable("DailyFlowerGiven");
-        haveFlower = flowchart.GetBooleanVariable("HaveFlower");
-        FlowerImageSetActive(haveFlower, gobj_FlowerImage);
         chr_Kawi.loveMeterValue = flowchart.GetFloatVariable("KwaiLoveMeter");
         chr_Unkel.loveMeterValue = flowchart.GetFloatVariable("UnkelLoveMeter");
         

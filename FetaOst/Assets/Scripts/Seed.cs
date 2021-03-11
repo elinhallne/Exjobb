@@ -18,7 +18,7 @@ public class Seed : MonoBehaviour
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
+  
     void Update()
     {
         //ButtonHandel();
@@ -30,7 +30,7 @@ public class Seed : MonoBehaviour
         Debug.Log(GameManager.currentTool);
     }
 
-    void ButtonHandel()
+    /*void ButtonHandel()
     {
         if (GameManager.dailyFlowerGiven == true)
         {
@@ -42,5 +42,5 @@ public class Seed : MonoBehaviour
             btn.interactable = true;
             m_SpriteRenderer.color = Color.white;
         }
-    }
+    } */
 }
