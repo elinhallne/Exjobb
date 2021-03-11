@@ -3,12 +3,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
+
 public class Player : MonoBehaviour
-{ 
+{
+    [SerializeField] 
+    private UI_Inventory uiInventory;
 
-    public Player()
+    private Inventory inventory;
+
+   private void Awake()
     {
+        inventory = new Inventory();
+        uiInventory.SetInventory(inventory);
 
+       
+    }
+
+    private void OnTriggerEnter(Collider collider)
+    {
+        ItemWorld itemWorld = collider.GetComponent<ItemWorld>();
+        if (itemWorld != null)
+        {
+            inventory.AddItem(itemWorld.GetItem());
+            itemWorld.DestroySelf();
+        }
     }
 }

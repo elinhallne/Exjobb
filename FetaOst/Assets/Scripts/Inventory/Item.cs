@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[Serializable]
+public class Item 
+{
+    public enum ItemType
+    {
+        WaterCan,
+        Seed,
+        Daisy,
+        Rose,
+        Tulip,
+        Violet,
+    }
+
+    public ItemType itemType;
+    public int amount;
+
+    public Sprite GetSprite()
+    {
+        switch (itemType)
+        {
+            default:
+            case ItemType.WaterCan: return ItemAsset.Instance.waterCanSprite;
+            case ItemType.Seed:     return ItemAsset.Instance.seedSprite;
+            case ItemType.Daisy:    return ItemAsset.Instance.daisySprite;
+            case ItemType.Rose:     return ItemAsset.Instance.roseSprite;
+            case ItemType.Tulip:    return ItemAsset.Instance.tulipSprite;
+            case ItemType.Violet:   return ItemAsset.Instance.violetSprite;
+        }
+    }
+
+}
