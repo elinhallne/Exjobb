@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
 
    private void Awake()
     {
-        inventory = new Inventory();
+        inventory = new Inventory(ChooseItem);
         uiInventory.SetInventory(inventory);
 
        
@@ -26,6 +26,19 @@ public class Player : MonoBehaviour
         {
             inventory.AddItem(itemWorld.GetItem());
             itemWorld.DestroySelf();
+        }
+    }
+    //här väljer jag vad de gör
+    private void ChooseItem(Item item)
+    {
+        switch (item.itemType)
+        {
+            case Item.ItemType.Seed:
+                GameManager.currentTool = "seed";
+                break;
+            case Item.ItemType.WaterCan:
+                GameManager.currentTool = "waterCan";
+                break;
         }
     }
 }

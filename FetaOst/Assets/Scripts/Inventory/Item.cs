@@ -33,4 +33,20 @@ public class Item
         }
     }
 
+    public bool IsStackable()
+    {
+        switch (itemType)
+        {
+            default:
+            case ItemType.Seed:
+                    return true;
+            case ItemType.WaterCan:
+            case ItemType.Daisy:
+            case ItemType.Rose:
+            case ItemType.Tulip:
+            case ItemType.Violet:
+                    return false;
+        }
+    }
+
 }
