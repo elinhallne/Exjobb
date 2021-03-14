@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using CodeMonkey.Utils;
 
 public class UI_Inventory : MonoBehaviour
 {
@@ -39,6 +40,8 @@ public class UI_Inventory : MonoBehaviour
             Destroy(child.gameObject);
         }
 
+       
+
         int x = 0;
         int y = 0;
         float itemSlotCellSize = 12.4f;
@@ -47,12 +50,15 @@ public class UI_Inventory : MonoBehaviour
             RectTransform itemSlotRectTransform = Instantiate(itemTemplate, itemSlotContainer).GetComponent<RectTransform>();
             itemSlotRectTransform.gameObject.SetActive(true);
 
-            Button btn = itemSlotRectTransform.GetComponent<Button>();
-            btn.onClick.AddListener(inventory.ChooseItem(item));
-
+            
             itemSlotRectTransform.anchoredPosition = new Vector2(x * itemSlotCellSize, y * itemSlotCellSize);
             Image image = itemSlotRectTransform.Find("image").GetComponent<Image>();
             image.sprite = item.GetSprite();
+
+            itemSlotRectTransform.GetComponent<Button_UI>().ClickFunc = () =>
+            {
+                inventory.ChooseItem(item);
+            };
 
             //texten funkar inte
             TextMeshProUGUI uiText = itemSlotRectTransform.Find("text").GetComponent<TextMeshProUGUI>();

@@ -57,6 +57,7 @@ public class Plantage : MonoBehaviour
 
 	}
 	// denna bit bhöver ses över kan inte överför till false eller true
+	// kontrollera om fältet är tomt
 	private bool IsFiledEmety()
     {
 		if (emptyField == "empty")
@@ -69,7 +70,6 @@ public class Plantage : MonoBehaviour
 		}
     }
 
-	// Planterad blommad if man har ett för så kan den planteras annars har man iget 
 
 	// kontrollera om fältet är tomt
 

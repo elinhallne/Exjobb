@@ -17,8 +17,7 @@ public class Inventory
 
         AddItem(new Item { itemType = Item.ItemType.Seed, amount = 5 });
         AddItem(new Item { itemType = Item.ItemType.WaterCan, amount = 1 });
-        AddItem(new Item { itemType = Item.ItemType.Rose, amount = 1 });
-        AddItem(new Item { itemType = Item.ItemType.Tulip, amount = 1 });
+       
 
         Debug.Log(itemList.Count);
     }
@@ -32,9 +31,8 @@ public class Inventory
             {
                 if(inverntoryItem.itemType == item.itemType)
                 {
-                    Debug.Log(item.amount + " 1");
+                   
                     inverntoryItem.amount += item.amount;
-                    Debug.Log(item.amount + " 2");
                     itemAlreadyInInventory = true;
                 }
             }
@@ -49,6 +47,31 @@ public class Inventory
         }
 
         OnItemListChange?.Invoke(this, EventArgs.Empty);
+    }
+
+    public void RemoveItem(Item item)
+    {
+        if (item.IsStackable())
+        {
+            Item itemInInventory = null;
+            foreach(Item inventoryItem in itemList)
+            {
+                if (inventoryItem.itemType == item.itemType)
+                {
+                    inventoryItem.amount -= item.amount;
+                    itemInInventory = inventoryItem;
+                }
+            }
+            if (itemInInventory != null && itemInInventory.amount <= 0)
+            {
+                itemList.Remove(item);
+            }
+            else
+            {
+                itemList.Remove(item);
+            }
+            OnItemListChange?.Invoke(this, EventArgs.Empty);
+        }
     }
 
     public void ChooseItem (Item item)

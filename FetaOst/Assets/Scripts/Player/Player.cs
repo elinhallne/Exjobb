@@ -30,12 +30,19 @@ public class Player : MonoBehaviour
     }
     //här väljer jag vad de gör
     private void ChooseItem(Item item)
+
     {
+        Debug.Log(item.itemType);
+        
         switch (item.itemType)
         {
             case Item.ItemType.Seed:
-                GameManager.currentTool = "seed";
-                break;
+                {
+                    Debug.Log("I here! Player Seed");
+                    GameManager.currentTool = "seed";
+                    inventory.RemoveItem(new Item { itemType = Item.ItemType.Seed, amount = 1 });
+                    break;
+                }
             case Item.ItemType.WaterCan:
                 GameManager.currentTool = "waterCan";
                 break;
