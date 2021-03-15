@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] 
     private UI_Inventory uiInventory;
 
-    private Inventory inventory;
+    private static Inventory inventory;
 
    private void Awake()
     {
@@ -47,5 +47,10 @@ public class Player : MonoBehaviour
                 GameManager.currentTool = "waterCan";
                 break;
         }
+    }
+
+    public static Inventory GetInventory()
+    {
+        return inventory;
     }
 }

@@ -10,6 +10,7 @@ public class Plantage : MonoBehaviour
 	private float timeToGrow; //Variabeln som mäter hur långt den har växt
 	public SpriteRenderer spriteRendererFlower;
 
+
 	private string emptyField = "empty";
 	
 	public Plantage()
@@ -24,6 +25,7 @@ public class Plantage : MonoBehaviour
 		{
 		  if (flower.growTime == timeToGrow)
 		    {
+			Player.GetInventory().AddItem (new Item { itemType = Item.ItemType.Daisy, amount = 1 });
 			timeToGrow = 0;
 			emptyField = "empty";
 			DestroyFlower();
@@ -38,6 +40,8 @@ public class Plantage : MonoBehaviour
     {
 		if (GameManager.currentTool == "waterCan" && IsFiledEmety() == false)
 		{
+			spriteRendererFlower.sprite = flower.GrowStatus(timeToGrow, flower);
+			
 			Debug.Log(timeToGrow);
 			timeToGrow++;
 		}
