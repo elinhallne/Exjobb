@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using CodeMonkey.Utils;
+using Fungus;
 
 public class UI_Inventory : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class UI_Inventory : MonoBehaviour
 
     private Transform itemSlotContainer;
     private Transform itemTemplate;
+    private Transform markor;
 
     private void Awake()
     {
@@ -21,6 +23,7 @@ public class UI_Inventory : MonoBehaviour
     {
         itemSlotContainer = transform.Find("itemSlotContainer");
         itemTemplate = itemSlotContainer.Find("itemTemplate");
+        markor = transform.Find("markor");
         this.inventory = inventory;
 
         inventory.OnItemListChange += Inventory_OnItemListChange;
@@ -57,6 +60,7 @@ public class UI_Inventory : MonoBehaviour
 
             itemSlotRectTransform.GetComponent<Button_UI>().ClickFunc = () =>
             {
+               
                 inventory.ChooseItem(item);
             };
 

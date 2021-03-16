@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
     private void ChooseItem(Item item)
 
     {
-        Debug.Log(item.itemType);
+        Debug.Log("Item: " + item.itemType);
         
         switch (item.itemType)
         {
@@ -40,11 +40,14 @@ public class Player : MonoBehaviour
                 {
                     Debug.Log("I here! Player Seed");
                     GameManager.currentTool = "seed";
-                    inventory.RemoveItem(new Item { itemType = Item.ItemType.Seed, amount = 1 });
                     break;
                 }
             case Item.ItemType.WaterCan:
                 GameManager.currentTool = "waterCan";
+                break;
+
+            case Item.ItemType.Daisy:
+                GameManager.currentTool = "daisy";
                 break;
         }
     }

@@ -21,7 +21,7 @@ public class BrunnScript : MonoBehaviour
     {
         if (GameManager.currentTool == "waterCan")
         {
-            amountOfWaterInCan = 1;
+            amountOfWaterInCan += 4;
         }
     }
 }

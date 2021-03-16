@@ -83,5 +83,33 @@ public class Inventory
     {
         return itemList;
     }
-        
+
+    public void CheckForItem(Item item)
+    {
+        if (item.IsFlower())
+        {
+            bool InInventory = false;
+            foreach (Item inverntoryItem in itemList)
+            {
+                if (inverntoryItem.itemType == item.itemType)
+                {
+                    
+                    InInventory = true;
+                    GameManager.haveFlower = true;
+                }
+            }
+            if (!InInventory)
+            {
+                GameManager.haveFlower = false;
+            }
+        }
+        else
+        {
+            GameManager.haveFlower = false;
+        }
+
+        //OnItemListChange?.Invoke(this, EventArgs.Empty);
+    }
 }
+        
+

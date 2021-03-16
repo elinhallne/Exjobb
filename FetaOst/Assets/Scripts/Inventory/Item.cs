@@ -39,14 +39,30 @@ public class Item
         {
             default:
             case ItemType.Seed:
-                    return true;
             case ItemType.WaterCan:
+                return true;
             case ItemType.Daisy:
             case ItemType.Rose:
             case ItemType.Tulip:
             case ItemType.Violet:
                     return false;
         }
+    }
+     public bool IsFlower()
+    {
+        switch (itemType)
+        {
+            default:
+            case ItemType.Daisy:
+            case ItemType.Rose:
+            case ItemType.Tulip:
+            case ItemType.Violet:
+                return true;
+            case ItemType.Seed:
+            case ItemType.WaterCan:
+                return false;
+        }
+          
     }
 
 }

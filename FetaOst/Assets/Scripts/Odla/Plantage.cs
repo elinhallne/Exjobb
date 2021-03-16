@@ -6,7 +6,7 @@ using UnityEngine;
 [System.Serializable]
 public class Plantage : MonoBehaviour
 {
-	public Flower flower;
+	private Flower flower;
 	private float timeToGrow; //Variabeln som mäter hur långt den har växt
 	public SpriteRenderer spriteRendererFlower;
 
@@ -25,6 +25,7 @@ public class Plantage : MonoBehaviour
 		{
 		  if (flower.growTime == timeToGrow)
 		    {
+			
 			Player.GetInventory().AddItem (new Item { itemType = Item.ItemType.Daisy, amount = 1 });
 			timeToGrow = 0;
 			emptyField = "empty";
@@ -38,22 +39,32 @@ public class Plantage : MonoBehaviour
 	
 	public void FlowerIsWatered()
     {
-		if (GameManager.currentTool == "waterCan" && IsFiledEmety() == false)
+		if (GameManager.currentTool == "waterCan" && IsFiledEmety() == false && BrunnScript.amountOfWaterInCan > 0 )
 		{
 			spriteRendererFlower.sprite = flower.GrowStatus(timeToGrow, flower);
-			
-			Debug.Log(timeToGrow);
+
+			BrunnScript.amountOfWaterInCan--;
+			Debug.Log("Current Grow Time: " + timeToGrow);
 			timeToGrow++;
 		}
 		
     }
-	
-	public void FlowerPlanted(Flower aFlower)
+
+	private int RandomInteger()
     {
-		flower = aFlower;
+		int randNr = UnityEngine.Random.Range(1, 4);
+		return randNr;
+    }
+	
+	public void FlowerPlanted()
+    {
+		//aFlower = new Flower();
+		
 		if (GameManager.currentTool == "seed" && IsFiledEmety() == true)
         {
-			spriteRendererFlower.sprite = aFlower.spriteRenderer.sprite;
+			flower = new Flower(RandomInteger());
+			Player.GetInventory().RemoveItem( new Item { itemType = Item.ItemType.Seed, amount = 1 }); // kolla upp att detta är rätt känns fel
+			spriteRendererFlower.sprite = flower.GetSprite(flower.flowerType)[0];
 			emptyField = "full";
 
 		}
@@ -80,8 +91,8 @@ public class Plantage : MonoBehaviour
 	// Blomman plockas
 	private void DestroyFlower()
     {
+		Player.GetInventory().CheckForItem(new Item { itemType = Item.ItemType.Daisy, amount = 1 });
 		spriteRendererFlower.sprite = null;
-		flower = null;
 		Destroy(flower);
 
 

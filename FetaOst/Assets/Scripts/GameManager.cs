@@ -6,8 +6,8 @@ using Fungus;
 public class GameManager : MonoBehaviour
 {
     public static string currentTool = "none";
-    
-    public static Flowchart flowchart;
+    public static bool haveFlower = false;
+     public static Flowchart flowchart;
     
     public Character chr_Kawi;
     public Character chr_Unkel;
@@ -15,12 +15,18 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private PlantControler plantControler;
 
+    private bool removeItem;
+
     // Start is called before the first frame update
     void Start()
     {
         //kommer säkert behöva skriva en funktion för hur det funkar
         flowchart = GetComponent<Flowchart>();
-      
+        flowchart.SetBooleanVariable("HaveFlower", haveFlower);
+        removeItem = flowchart.GetBooleanVariable("RemoveItem");
+
+
+
         chr_Kawi.loveMeter.SetSize(0f);
         chr_Unkel.loveMeter.SetSize(0f);
 
@@ -39,16 +45,20 @@ public class GameManager : MonoBehaviour
         chr_Kawi.UpdateLoveValue();
         chr_Unkel.UpdateLoveValue();
 
-        
+        UpdateFungusVariabels();
 
     }
 
-    private void FlowerImageSetActive(bool _bool, GameObject _gameObject)
+    private void UpdateFungusVariabels()
     {
-        
-            _gameObject.SetActive(_bool);
-                       
+        flowchart.SetBooleanVariable("HaveFlower", haveFlower);
+        removeItem = flowchart.GetBooleanVariable("RemoveItem");
+        if (removeItem == true)
+        {
+            Player.GetInventory().RemoveItem(new Item { itemType = Item.ItemType.Daisy, amount = 1 });
+            Debug.Log("I Have removed ");
+            Player.GetInventory().CheckForItem(new Item { itemType = Item.ItemType.Daisy, amount = 1 });
+            flowchart.SetBooleanVariable("RemoveItem", false);
+        }
     }
-
-
 }

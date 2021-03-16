@@ -7,8 +7,7 @@ public class PlantControler : MonoBehaviour
 {
 
     public Plantage[] plantages;
-    public Flower[] flowers;
-    int i = 0;
+       int i = 0;
 
     
   public PlantControler()
@@ -19,9 +18,9 @@ public class PlantControler : MonoBehaviour
             plantages.Add(plantage); 
         } */
     }
-    void OnMouseDown()
+    void OnMouseDown() //collider sitter på denna
     {
-        plantages[i].FlowerPlanted(flowers[0]);
+        plantages[i].FlowerPlanted();
 
         plantages[i].FlowerIsWatered();
 
