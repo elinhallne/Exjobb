@@ -38,8 +38,8 @@ public class Player : MonoBehaviour
         {
             case Item.ItemType.Seed:
                 {
-                    Debug.Log("I here! Player Seed");
                     GameManager.currentTool = "seed";
+                    
                     break;
                 }
             case Item.ItemType.WaterCan:

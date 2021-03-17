@@ -59,11 +59,10 @@ public class Plantage : MonoBehaviour
 	public void FlowerPlanted()
     {
 		//aFlower = new Flower();
-		
 		if (GameManager.currentTool == "seed" && IsFiledEmety() == true)
         {
+			Player.GetInventory().RemoveItem(new Item { itemType = Item.ItemType.Seed, amount = 1 });
 			flower = new Flower(RandomInteger());
-			Player.GetInventory().RemoveItem( new Item { itemType = Item.ItemType.Seed, amount = 1 }); // kolla upp att detta är rätt känns fel
 			spriteRendererFlower.sprite = flower.GetSprite(flower.flowerType)[0];
 			emptyField = "full";
 
@@ -91,7 +90,7 @@ public class Plantage : MonoBehaviour
 	// Blomman plockas
 	private void DestroyFlower()
     {
-		Player.GetInventory().CheckForItem(new Item { itemType = Item.ItemType.Daisy, amount = 1 });
+		Player.GetInventory().CheckForItem(new Item { itemType = Item.ItemType.Daisy, amount = 1 });// behöver flyttas till innan den checkar fungus
 		spriteRendererFlower.sprite = null;
 		Destroy(flower);
 

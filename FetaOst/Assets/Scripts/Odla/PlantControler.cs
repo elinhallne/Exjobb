@@ -5,26 +5,17 @@ using Fungus;
 
 public class PlantControler : MonoBehaviour
 {
-
-    public Plantage[] plantages;
-       int i = 0;
-
+   [SerializeField]
+    private Plantage plantages;
     
-  public PlantControler()
+    
+     void OnMouseDown() //collider sitter på denna
     {
-        /*foreach (Plantage plantage in plantages)
-        {
-            plantage = new Plantage();
-            plantages.Add(plantage); 
-        } */
-    }
-    void OnMouseDown() //collider sitter på denna
-    {
-        plantages[i].FlowerPlanted();
+        plantages.FlowerPlanted();
 
-        plantages[i].FlowerIsWatered();
+        plantages.FlowerIsWatered();
 
-        plantages[i].FlowerReadyToPick();
+        plantages.FlowerReadyToPick();
     }
     
        

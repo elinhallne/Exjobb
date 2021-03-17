@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -46,6 +47,7 @@ public class GameManager : MonoBehaviour
         chr_Unkel.UpdateLoveValue();
 
         UpdateFungusVariabels();
+        CheatCodes();
 
     }
 
@@ -55,10 +57,27 @@ public class GameManager : MonoBehaviour
         removeItem = flowchart.GetBooleanVariable("RemoveItem");
         if (removeItem == true)
         {
-            Player.GetInventory().RemoveItem(new Item { itemType = Item.ItemType.Daisy, amount = 1 });
+            //Player.GetInventory().RemoveItem(Player.GetInventory().GetItemList(){ itemType = Item.ItemType.Daisy, amount = 1 }); //något
             Debug.Log("I Have removed ");
             Player.GetInventory().CheckForItem(new Item { itemType = Item.ItemType.Daisy, amount = 1 });
             flowchart.SetBooleanVariable("RemoveItem", false);
+        }
+    }
+
+    private void CheatCodes()
+    {
+        var input = Input.inputString;
+
+        switch (input)
+        {
+            case "p":
+                Debug.Log("Reset Scene");
+                SceneManager.LoadScene(1);
+                break;
+            case "å":
+                break;
+
+
         }
     }
 }

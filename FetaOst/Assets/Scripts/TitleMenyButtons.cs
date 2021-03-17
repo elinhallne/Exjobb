@@ -12,11 +12,7 @@ public class TitleMenyButtons : MonoBehaviour
             case "StartButton":
                 SceneManager.LoadScene("MainLevel");
                 break;
-            case "HowToButton":
-                break;
-            case "OptionButton":
-                break;
-            
+                       
 
         }
     }
