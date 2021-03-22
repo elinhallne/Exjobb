@@ -17,8 +17,9 @@ public class Flower : MonoBehaviour
 	public FlowerType flowerType;
 
 	public float growTime;
-	public SpriteRenderer spriteRenderer; //ta bort
-	
+	private SpriteRenderer spriteRenderer;
+	private float x, y, z;
+
 	[SerializeField]
 	private Sprite[] sprites;
 	private int currentSpriteNum = 0;
@@ -35,18 +36,27 @@ public class Flower : MonoBehaviour
 	private void Awake()
     {
 		
-		spriteRenderer.sprite = sprites[0];
+		//spriteRenderer.sprite = sprites[0];
     }
 
+
+	//det behövs att man kan anpassa längden till 
 	public Sprite GrowStatus(float currentGrowTime, Flower aFlower)
     {
-		switch (currentGrowTime)
-		{
-			default: return aFlower.GetSprite(aFlower.flowerType)[currentSpriteNum];
-			case 0f: return aFlower.GetSprite(aFlower.flowerType)[0];
-			case 2f: return UpdateSpriteRenderer(currentGrowTime, aFlower);
-			case 4f: return UpdateSpriteRenderer(currentGrowTime, aFlower);
+		if(currentGrowTime == x) {
+			return aFlower.GetSprite(aFlower.flowerType)[0];
 		}
+		else if (currentGrowTime == y) {
+			return UpdateSpriteRenderer(currentGrowTime, aFlower);
+		}
+		else if ( currentGrowTime == z){
+			return UpdateSpriteRenderer(currentGrowTime, aFlower);
+		}
+        else
+        {
+			return aFlower.GetSprite(aFlower.flowerType)[currentSpriteNum];
+		}
+		
     }
 
 	private Sprite UpdateSpriteRenderer(float currentGrowTime, Flower aFlower)
@@ -88,16 +98,27 @@ public class Flower : MonoBehaviour
 			case FlowerType.Daisy:
 				
 				growTime = 6;
-				
+				x = 2;
+				y = 3;
+				z = 4;
 				break;
 			case FlowerType.Rose:
 				growTime = 8;
+				x = 2;
+				y = 4;
+				z = 6;
 				break;
 			case FlowerType.Tulip:
 				growTime = 4;
+				x = 0;
+				y = 1;
+				z = 2;
 				break;
 			case FlowerType.Violet:
 				growTime = 5;
+				x = 1;
+				y = 2;
+				z = 3;
 				break;
 
 
