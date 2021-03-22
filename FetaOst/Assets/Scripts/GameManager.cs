@@ -57,9 +57,9 @@ public class GameManager : MonoBehaviour
         removeItem = flowchart.GetBooleanVariable("RemoveItem");
         if (removeItem == true)
         {
-            //Player.GetInventory().RemoveItem(Player.GetInventory().GetItemList(){ itemType = Item.ItemType.Daisy, amount = 1 }); //något
+            Player.GetInventory().RemoveItem(new Item { itemType = Item.ItemType.Daisy, amount = 1 }); ; 
             Debug.Log("I Have removed ");
-            Player.GetInventory().CheckForItem(new Item { itemType = Item.ItemType.Daisy, amount = 1 });
+            //Player.GetInventory().CheckForItem(new Item { itemType = Item.ItemType.Daisy, amount = 1 });
             flowchart.SetBooleanVariable("RemoveItem", false);
         }
     }

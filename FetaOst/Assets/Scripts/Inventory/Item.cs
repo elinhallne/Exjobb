@@ -40,8 +40,9 @@ public class Item
             default:
             case ItemType.Seed:
             case ItemType.WaterCan:
-                return true;
             case ItemType.Daisy:
+                return true;
+           
             case ItemType.Rose:
             case ItemType.Tulip:
             case ItemType.Violet:
