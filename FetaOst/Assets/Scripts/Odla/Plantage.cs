@@ -27,6 +27,7 @@ public class Plantage : MonoBehaviour
 		    {
 			
 			Player.GetInventory().AddItem (new Item { itemType = Item.ItemType.Daisy, amount = 1 });
+			GameManager.haveFlower = true;
 			timeToGrow = 0;
 			emptyField = "empty";
 			DestroyFlower();
@@ -90,7 +91,7 @@ public class Plantage : MonoBehaviour
 	// Blomman plockas
 	private void DestroyFlower()
     {
-		Player.GetInventory().CheckForItem(new Item { itemType = Item.ItemType.Daisy, amount = 1 });// behöver flyttas till innan den checkar fungus
+		// behöver flyttas till innan den checkar fungus
 		spriteRendererFlower.sprite = null;
 		Destroy(flower);
 

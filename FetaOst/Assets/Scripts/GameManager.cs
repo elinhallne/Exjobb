@@ -54,14 +54,8 @@ public class GameManager : MonoBehaviour
     private void UpdateFungusVariabels()
     {
         flowchart.SetBooleanVariable("HaveFlower", haveFlower);
-        removeItem = flowchart.GetBooleanVariable("RemoveItem");
-        if (removeItem == true)
-        {
-            Player.GetInventory().RemoveItem(new Item { itemType = Item.ItemType.Daisy, amount = 1 }); ; 
-            Debug.Log("I Have removed ");
-            //Player.GetInventory().CheckForItem(new Item { itemType = Item.ItemType.Daisy, amount = 1 });
-            flowchart.SetBooleanVariable("RemoveItem", false);
-        }
+        
+       
     }
 
     private void CheatCodes()

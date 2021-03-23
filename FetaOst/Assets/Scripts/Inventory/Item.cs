@@ -42,7 +42,7 @@ public class Item
             case ItemType.WaterCan:
             case ItemType.Daisy:
                 return true;
-           
+            
             case ItemType.Rose:
             case ItemType.Tulip:
             case ItemType.Violet:

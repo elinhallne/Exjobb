@@ -48,6 +48,7 @@ public class Player : MonoBehaviour
 
             case Item.ItemType.Daisy:
                 GameManager.currentTool = "daisy";
+                
                 break;
         }
     }
