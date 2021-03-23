@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     
     public Character chr_Kawi;
     public Character chr_Unkel;
+    public Character chr_Noir;
 
     [SerializeField]
     private PlantControler plantControler;
@@ -41,10 +42,12 @@ public class GameManager : MonoBehaviour
     {
         chr_Kawi.loveMeterValue = flowchart.GetFloatVariable("KwaiLoveMeter");
         chr_Unkel.loveMeterValue = flowchart.GetFloatVariable("UnkelLoveMeter");
-        
+        chr_Noir.loveMeterValue = flowchart.GetFloatVariable("NoirLoveMeter");
+
 
         chr_Kawi.UpdateLoveValue();
         chr_Unkel.UpdateLoveValue();
+        chr_Noir.UpdateLoveValue();
 
         UpdateFungusVariabels();
         CheatCodes();
