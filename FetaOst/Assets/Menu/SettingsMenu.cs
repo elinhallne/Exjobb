@@ -5,6 +5,7 @@ using UnityEngine.Audio;
 using UnityEngine.UI;
 
 
+
 public class SettingsMenu : MonoBehaviour
 {
 
@@ -13,6 +14,10 @@ public class SettingsMenu : MonoBehaviour
     public Dropdown resolutionDropDown;
 
     Resolution[] resolutions;
+
+    Font[] myFonts;
+
+
 
     void Start()
     {
@@ -36,6 +41,9 @@ public class SettingsMenu : MonoBehaviour
         resolutionDropDown.AddOptions(options);
         resolutionDropDown.value = CurrentResolutionIndex;
         resolutionDropDown.RefreshShownValue();
+
+        
+
     }
 
     public void SetResolution (int resolutionIndex)
@@ -49,6 +57,11 @@ public class SettingsMenu : MonoBehaviour
     {
        // Debug.Log(volume);
         audioMixer.SetFloat("volume", volume);
+    }
+
+    public void SetFont (int fontIndex)
+    {
+        TextGenerationSettings.font;
     }
 
     public void SetQuality (int qualityIndex)
