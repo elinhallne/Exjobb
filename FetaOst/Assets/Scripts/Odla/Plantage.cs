@@ -27,7 +27,7 @@ public class Plantage : MonoBehaviour
 		    {
 			
 			Player.GetInventory().AddItem (new Item { itemType = Item.ItemType.Daisy, amount = 1 });
-			GameManager.haveFlower = true;
+			Player.GetInventory().CheckForItem(new Item { itemType = Item.ItemType.Daisy, amount = 1 });
 			timeToGrow = 0;
 			emptyField = "empty";
 			DestroyFlower();
@@ -44,7 +44,7 @@ public class Plantage : MonoBehaviour
 		{
 			spriteRendererFlower.sprite = flower.GrowStatus(timeToGrow, flower);
 
-			BrunnScript.amountOfWaterInCan--;
+			BrunnScript.amountOfWaterInCan -= 0.1f;
 			Debug.Log("Current Grow Time: " + timeToGrow);
 			timeToGrow++;
 		}

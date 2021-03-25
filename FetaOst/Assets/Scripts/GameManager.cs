@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private PlantControler plantControler;
 
-    private bool removeItem;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
         //kommer säkert behöva skriva en funktion för hur det funkar
         flowchart = GetComponent<Flowchart>();
         flowchart.SetBooleanVariable("HaveFlower", haveFlower);
-        removeItem = flowchart.GetBooleanVariable("RemoveItem");
+        
 
 
 
@@ -56,7 +56,6 @@ public class GameManager : MonoBehaviour
 
     private void UpdateFungusVariabels()
     {
-        flowchart.SetBooleanVariable("HaveFlower", haveFlower);
         
        
     }

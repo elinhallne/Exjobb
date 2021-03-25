@@ -12,7 +12,10 @@ public class TitleMenyButtons : MonoBehaviour
             case "StartButton":
                 SceneManager.LoadScene("MainLevel");
                 break;
-                       
+            case "ExitButton":
+                SceneManager.LoadScene("TitleScreen");
+                break;
+
 
         }
     }
