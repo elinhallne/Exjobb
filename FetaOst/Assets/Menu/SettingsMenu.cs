@@ -61,7 +61,7 @@ public class SettingsMenu : MonoBehaviour
 
     public void SetFont (int fontIndex)
     {
-        TextGenerationSettings.font;
+        //TextGenerationSettings.font;
     }
 
     public void SetQuality (int qualityIndex)
