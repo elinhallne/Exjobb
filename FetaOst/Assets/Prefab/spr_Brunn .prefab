@@ -108,3 +108,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d4759febedf4140ab64e389762b015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waterCanMeter: {fileID: 0}

@@ -2,10 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 public class Inventory
 {
-    public event EventHandler OnItemListChange;
+    public event System.EventHandler OnItemListChange;
 
     private List<Item> itemList;
     private Action<Item> useItemAction;
@@ -86,19 +87,29 @@ public class Inventory
 
    public void CheckForItem(Item item)
     {
-
-        if (itemList.Contains(item))
+        bool notInInventory = false;
+        foreach (Item itemInIventory in itemList)
         {
-            Debug.Log("true");
-            GameManager.haveFlower = true;
+            
+            if (itemInIventory.itemType == item.itemType)
+            {
+                Debug.Log("true");
+                notInInventory = true;
+                GameManager.flowchart.SetBooleanVariable("HaveFlower", true);
+       
+            }
         }
-        else
-        {
-            Debug.Log("false");
-            GameManager.haveFlower = false;
+          if (!notInInventory)
+            {
+                Debug.Log("false");
+                GameManager.flowchart.SetBooleanVariable("HaveFlower", false);
+
         }
 
-                        
+
+
+
+
     }
 }
         
