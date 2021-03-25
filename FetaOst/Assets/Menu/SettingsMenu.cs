@@ -13,6 +13,8 @@ public class SettingsMenu : MonoBehaviour
 
     public Dropdown resolutionDropDown;
 
+    public Dropdown GraphicsDropDown;
+
     Resolution[] resolutions;
 
     Font[] myFonts;
@@ -55,13 +57,8 @@ public class SettingsMenu : MonoBehaviour
 
     public void SetVolume (float volume)
     {
-       // Debug.Log(volume);
+       
         audioMixer.SetFloat("volume", volume);
-    }
-
-    public void SetFont (int fontIndex)
-    {
-        //TextGenerationSettings.font;
     }
 
     public void SetQuality (int qualityIndex)
