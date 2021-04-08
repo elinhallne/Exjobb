@@ -3705,7 +3705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 596701566}
+  selectedFlowchart: {fileID: 453834783341194544}
 --- !u!4 &692364516
 Transform:
   m_ObjectHideFlags: 1
@@ -8118,7 +8118,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -582.34033
     y: -351.55316
-    width: 99.34711
+    width: 145.7447
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -8207,11 +8207,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 771.89453, y: 570.44403}
+  scrollPos: {x: 790.38544, y: 575.0174}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 202
-  zoom: 0.96999973
+  zoom: 0.93999976
   scrollViewRect:
     serializedVersion: 2
     x: 0
@@ -8219,9 +8219,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 5509112489956555619}
+  - {fileID: 1305153047951611298}
   selectedCommands:
-  - {fileID: 453834783341194549}
+  - {fileID: 453834783341194550}
   variables:
   - {fileID: 1122144402323004213}
   description: 
@@ -8317,6 +8317,8 @@ GameObject:
   - component: {fileID: 453834783341194577}
   - component: {fileID: 453834783341194576}
   - component: {fileID: 453834783341194574}
+  - component: {fileID: 453834783341194575}
+  - component: {fileID: 453834783341194550}
   m_Layer: 0
   m_Name: Noir
   m_TagString: Untagged
@@ -8490,6 +8492,33 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &453834783341194550
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453834783341194547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 82
+  indentLevel: 1
+  storyText: " \r\xC4r du bekant med Blomspr\xE5ket? "
+  description: 
+  character: {fileID: 3344033746429994667}
+  portrait: {fileID: 21300000, guid: efa812f12ae3f5147a76ecbf7fbe9842, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 9884671763ec6f14aa40088e2dc273d7, type: 3}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &453834783341194551
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -10308,13 +10337,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 32
   indentLevel: 1
-  storyText: "Vilken vacker skapelse, har du odlat den sj\xE4lv? \r\xC4r du bekant
-    med Blomspr\xE5ket? Inte? Det var ju tr\xE5kigt, jag som alltid letar efter kamrater
-    i blomspr\xE5ket.\r\n"
+  storyText: "Vilken vacker skapelse, har du odlat den sj\xE4lv?\n"
   description: 
   character: {fileID: 3344033746429994667}
   portrait: {fileID: 21300000, guid: efa812f12ae3f5147a76ecbf7fbe9842, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: fe3efa5dd5ada94428375db7cc044c3f, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -10836,6 +10863,34 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &453834783341194575
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453834783341194547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 81
+  indentLevel: 1
+  storyText: "Inte? Det var ju tr\xE5kigt, jag som alltid letar efter kamrater i
+    blomspr\xE5ket.\r\n"
+  description: 
+  character: {fileID: 3344033746429994667}
+  portrait: {fileID: 21300000, guid: efa812f12ae3f5147a76ecbf7fbe9842, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 9388b241ffe6b9746a5a3ac628f6f8ac, type: 3}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &453834783341194576
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -11033,7 +11088,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -350.36438
     y: -349.62537
-    width: 60
+    width: 98.93619
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12014,7 +12069,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -353.36438
     y: -461.62537
-    width: 60
+    width: 96.80852
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12026,6 +12081,8 @@ MonoBehaviour:
   - {fileID: 453834783341194572}
   - {fileID: 453834783341194570}
   - {fileID: 453834783341194571}
+  - {fileID: 453834783341194550}
+  - {fileID: 453834783341194575}
   - {fileID: 453834783341194569}
   - {fileID: 453834783341194568}
   suppressAllAutoSelections: 0
@@ -12834,7 +12891,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -351.36438
     y: -293.62537
-    width: 60
+    width: 98.93619
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13524,7 +13581,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -358.82312
     y: -514.12537
-    width: 80.7904
+    width: 125.53194
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14252,7 +14309,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -349.40558
     y: -244.3058
-    width: 60
+    width: 97.87235
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14964,7 +15021,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -347.9665
     y: -196.17052
-    width: 60.859123
+    width: 104.25533
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15075,7 +15132,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -352.36438
     y: -405.62537
-    width: 60
+    width: 97.87235
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
