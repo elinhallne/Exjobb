@@ -18,16 +18,15 @@ public class Plantage : MonoBehaviour
 		
     }
 
-	/*public void PickingFlower() { 
-	}*/
+
 
 	public bool FlowerReadyToPick()
 		{
 		  if (flower.growTime == timeToGrow)
 		    {
 			
-			Player.GetInventory().AddItem (new Item { itemType = Item.ItemType.Daisy, amount = 1 });
-			Player.GetInventory().CheckForItem(new Item { itemType = Item.ItemType.Daisy, amount = 1 });
+			Player.GetInventory().AddItem(flower.SetItemType(flower.flowerType));
+			Player.GetInventory().CheckForItem(flower.SetItemType(flower.flowerType));
 			timeToGrow = 0;
 			emptyField = "empty";
 			DestroyFlower();
@@ -86,7 +85,6 @@ public class Plantage : MonoBehaviour
     }
 
 
-	// kontrollera om fältet är tomt
 
 	// Blomman plockas
 	private void DestroyFlower()

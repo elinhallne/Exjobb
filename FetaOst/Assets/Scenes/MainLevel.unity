@@ -1336,7 +1336,7 @@ MonoBehaviour:
   daisySprites:
   - {fileID: 21300000, guid: c619e07d2006b5141997c354e286da26, type: 3}
   - {fileID: 21300000, guid: fb9970feb8b80cc4aa5bea819709d944, type: 3}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 1844620fa148d4dc89443ca7b33205e1, type: 3}
   roseSprites:
   - {fileID: 21300000, guid: c619e07d2006b5141997c354e286da26, type: 3}
   - {fileID: 21300000, guid: fb9970feb8b80cc4aa5bea819709d944, type: 3}
@@ -1844,7 +1844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 6069.046, y: -9083.361}
+  scrollPos: {x: 6970.124, y: -9136.171}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 201
@@ -1857,7 +1857,8 @@ MonoBehaviour:
     height: 0
   selectedBlocks:
   - {fileID: 596701577}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 596701575}
   variables:
   - {fileID: 596701567}
   - {fileID: 596701570}
@@ -1919,7 +1920,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5718.8193
     y: 10209.695
-    width: 74
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1998,7 +1999,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5601.6934
     y: 10297.986
-    width: 111.33333
+    width: 71.33333
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2039,12 +2040,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 4
   indentLevel: 0
-  storyText: "Du har precis flytta till byn \xC4nglah\xE5lla. Byn har bara ett f\xE5tal
-    inv\xE5nare, varav alla gillar blommor. R\xE4dslan f\xF6r att inte passa in i
-    sm\xE5 byn g\xF6r att du sj\xE4lv t\xE4nker b\xF6rja odla blommor, som du kan
-    ge till inv\xE5narna i f\xF6rhoppning om att etablera v\xE4nskapliga relationer.
-    B\xF6rja med att g\xE5 runt och introducera dig till inv\xE5narna de \xE4r s\xE4ker
-    nyfikna p\xE5 vem du \xE4r.\r\n"
+  storyText: "Du har precis flytta till byn \xC4nglah\xE5lla, byn har bara ett f\xE5tal
+    inv\xE5nare. \xC4nglah\xE5lla \xE4r k\xE4nt f\xF6r sina vackra odlingar av blommor
+    som blomstrar genom hela sommaren. Det lockar turister fr\xE5n hela Sverige.
+    Den som inte passar in f\xE5r inte stanna kvar i \xC4nglah\xE5lla l\xE4nge. \r\nDin
+    dr\xF6m har varit att bo i \xC4nglah\xE5lla \xE4nda sedan du var en liten r\xF6d
+    panda baby. \r\n\r\nNu n\xE4r du v\xE4l \xE4r h\xE4r k\xE4nner du dig fruktansv\xE4rt
+    r\xE4dd. R\xE4dd f\xF6r att inte passa in i byn och att de kommer tvinga dig
+    att l\xE4mna om du inte n\xE5r m\xE5ttet. Du har ett ess i rock\xE4rmen dock,
+    du kan odla de vackraste blommorna. F\xF6r att \xF6ka dina chanser att f\xE5
+    stanna best\xE4mmer du dig f\xF6r att bli popul\xE4r bland dina grannar, genom
+    att bli deras v\xE4nner. Om du bara kan bli v\xE4n med en person kan du \xF6ka
+    dina chanser. \r\n\r\nEftersom din enda talang \xE4r att odla blommor best\xE4mmer
+    du att utnyttja din talang och ge dina grannar blommor. Du har allt du beh\xF6ver
+    f\xF6r att kunna odla blommor, b\xE5de fr\xF6n och en vattenkanna. Se nu till
+    att skapa lite v\xE4nskapliga relationer, s\xE5 att du f\xE5r stanna kvar. \r\n\r\nEtt
+    f\xF6rsta steg kan vara att g\xE5 runt i byn och presentera dig f\xF6r dina grannar.\r\n "
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2087,7 +2098,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5901.3506
     y: 10202.917
-    width: 122
+    width: 82
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2137,7 +2148,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5599.8716
     y: 10115.105
-    width: 106
+    width: 66
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2900,7 +2911,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5404.2026
     y: 10203.373
-    width: 138
+    width: 98
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2963,7 +2974,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5601.3477
     y: 10207.651
-    width: 100.66667
+    width: 60.666668
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3582,7 +3593,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &687385816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5477,10 +5488,10 @@ MonoBehaviour:
     type: 3}
   waterCanSprite: {fileID: 21300000, guid: eb4ea482f01bab84099b02bd7d699236, type: 3}
   seedSprite: {fileID: 21300000, guid: c619e07d2006b5141997c354e286da26, type: 3}
-  daisySprite: {fileID: 21300000, guid: fb9970feb8b80cc4aa5bea819709d944, type: 3}
+  daisySprite: {fileID: 21300000, guid: 1844620fa148d4dc89443ca7b33205e1, type: 3}
   roseSprite: {fileID: 21300000, guid: ff7da9b56ed280f41b716734a6ef38e5, type: 3}
-  tulipSprite: {fileID: 21300000, guid: efa812f12ae3f5147a76ecbf7fbe9842, type: 3}
-  violetSprite: {fileID: 21300000, guid: 866f95d9dc530204ca65638ab0a20b9a, type: 3}
+  tulipSprite: {fileID: 21300000, guid: 866f95d9dc530204ca65638ab0a20b9a, type: 3}
+  violetSprite: {fileID: 21300000, guid: efa812f12ae3f5147a76ecbf7fbe9842, type: 3}
 --- !u!4 &1446121241
 Transform:
   m_ObjectHideFlags: 0

@@ -19,6 +19,7 @@ public class Flower : MonoBehaviour
 	public float growTime;
 	private SpriteRenderer spriteRenderer;
 	private float x, y, z;
+	private Item item;
 
 	[SerializeField]
 	private Sprite[] sprites;
@@ -31,16 +32,6 @@ public class Flower : MonoBehaviour
 		GetFlowerInformation(flowerType);
     }
 
-	
-
-	private void Awake()
-    {
-		
-		//spriteRenderer.sprite = sprites[0];
-    }
-
-
-	//det behövs att man kan anpassa längden till 
 	public Sprite GrowStatus(float currentGrowTime, Flower aFlower)
     {
 		if(currentGrowTime == x) {
@@ -135,4 +126,16 @@ public class Flower : MonoBehaviour
 			case FlowerType.Violet: return FlowerAsset.Instance.violetSprites;
 		}
     }
+
+	public Item SetItemType(FlowerType flowerType)
+	{
+		switch (flowerType)
+		{
+			default:
+			case FlowerType.Daisy: return new Item { itemType = Item.ItemType.Daisy, amount = 1 };
+			case FlowerType.Rose: return new Item { itemType = Item.ItemType.Rose, amount = 1 };
+			case FlowerType.Tulip: return new Item { itemType = Item.ItemType.Tulip, amount = 1 };
+			case FlowerType.Violet: return new Item { itemType = Item.ItemType.Violet, amount = 1 };
+		}
+	}
 }
