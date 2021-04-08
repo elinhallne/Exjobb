@@ -39,14 +39,13 @@ public class Item
         {
             default:
             case ItemType.Seed:
-            case ItemType.WaterCan:
-            case ItemType.Daisy:
-                return true;
-            
+            case ItemType.Daisy:                
             case ItemType.Rose:
             case ItemType.Tulip:
             case ItemType.Violet:
-                    return false;
+                return true;
+            case ItemType.WaterCan:
+                return false;
         }
     }
      public bool IsFlower()

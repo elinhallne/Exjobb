@@ -85,13 +85,13 @@ public class Inventory
         return itemList;
     }
 
-   public void CheckForItem(Item item)
+   public void CheckForItem()
     {
         bool notInInventory = false;
         foreach (Item itemInIventory in itemList)
         {
             
-            if (itemInIventory.itemType == item.itemType)
+            if (itemInIventory.itemType == Item.ItemType.Daisy || itemInIventory.itemType == Item.ItemType.Rose || itemInIventory.itemType == Item.ItemType.Tulip || itemInIventory.itemType == Item.ItemType.Violet)
             {
                 Debug.Log("true");
                 notInInventory = true;
@@ -106,10 +106,41 @@ public class Inventory
 
         }
 
+    }
 
-
-
-
+    public void RemoveBasedOnTypeFlower()
+    {
+        foreach(Item flowerItemInInventory in itemList)
+        {
+            if(flowerItemInInventory.itemType == Item.ItemType.Daisy)
+            {
+                Player.GetInventory().RemoveItem(new Item { itemType = Item.ItemType.Daisy, amount = 1 });
+                Player.GetInventory().CheckForItem();
+                Debug.Log("Tog bort Daisy");
+            } 
+            else if (flowerItemInInventory.itemType == Item.ItemType.Rose)
+            {
+                Player.GetInventory().RemoveItem(new Item { itemType = Item.ItemType.Rose, amount = 1 });
+                Player.GetInventory().CheckForItem();
+                Debug.Log("Tog bort Rose");
+            }
+            else if (flowerItemInInventory.itemType == Item.ItemType.Tulip)
+            {
+                Player.GetInventory().RemoveItem(new Item { itemType = Item.ItemType.Tulip, amount = 1 });
+                Player.GetInventory().CheckForItem();
+                Debug.Log("Tog bort Tulip");
+            }
+            else if (flowerItemInInventory.itemType == Item.ItemType.Violet)
+            {
+                Player.GetInventory().RemoveItem(new Item { itemType = Item.ItemType.Violet, amount = 1 });
+                Player.GetInventory().CheckForItem();
+                Debug.Log("Tog bort Violet");
+            }
+            else
+            {
+                Debug.Log("Du är dum");
+            }
+        }
     }
 }
         

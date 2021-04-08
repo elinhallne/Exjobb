@@ -26,7 +26,7 @@ public class Plantage : MonoBehaviour
 		    {
 			
 			Player.GetInventory().AddItem(flower.SetItemType(flower.flowerType));
-			Player.GetInventory().CheckForItem(flower.SetItemType(flower.flowerType));
+			Player.GetInventory().CheckForItem();
 			timeToGrow = 0;
 			emptyField = "empty";
 			DestroyFlower();
