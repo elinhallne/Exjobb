@@ -8219,9 +8219,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 1305153047951611298}
+  - {fileID: 4323060960851853469}
   selectedCommands:
-  - {fileID: 453834783341194550}
+  - {fileID: 453834783341194578}
   variables:
   - {fileID: 1122144402323004213}
   description: 
@@ -8319,6 +8319,7 @@ GameObject:
   - component: {fileID: 453834783341194574}
   - component: {fileID: 453834783341194575}
   - component: {fileID: 453834783341194550}
+  - component: {fileID: 453834783341194578}
   m_Layer: 0
   m_Name: Noir
   m_TagString: Untagged
@@ -10947,6 +10948,34 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &453834783341194578
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453834783341194547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 83
+  indentLevel: 0
+  storyText: "Jag har bott h\xE4r i 7 \xE5r nu och trivs v\xE4ldigt bra, du kommer
+    k\xE4nna dig som hemma n\xE4r som helst. "
+  description: 
+  character: {fileID: 3344033746429994667}
+  portrait: {fileID: 21300000, guid: efa812f12ae3f5147a76ecbf7fbe9842, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 8810b946cc7c3e34f905d858d341f98c, type: 3}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!223 &500206123169079780
 Canvas:
   m_ObjectHideFlags: 0
@@ -12512,13 +12541,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 13
   indentLevel: 0
-  storyText: "Goddag herr R\xF6d Panda! V\xE4lkommen till mitt \xF6dmjuka hem. Jag
-    har bott h\xE4r i 7 \xE5r nu och trivs v\xE4ldigt bra, du kommer k\xE4nna dig
-    som hemma n\xE4r som helst. "
+  storyText: "Goddag herr R\xF6d Panda! V\xE4lkommen till mitt \xF6dmjuka hem. "
   description: 
   character: {fileID: 3344033746429994667}
   portrait: {fileID: 21300000, guid: efa812f12ae3f5147a76ecbf7fbe9842, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: ec77e699340682346ac616ba0b255f5b, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -13591,6 +13618,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 2156433880094994515}
+  - {fileID: 453834783341194578}
   - {fileID: 7064471781328922125}
   suppressAllAutoSelections: 0
 --- !u!224 &4386375295877779389
