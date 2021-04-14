@@ -1782,6 +1782,7 @@ GameObject:
   - component: {fileID: 596701599}
   - component: {fileID: 596701606}
   - component: {fileID: 596701605}
+  - component: {fileID: 596701607}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1846,11 +1847,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 5968.702, y: -9874.739}
+  scrollPos: {x: 5775.8774, y: -10028.106}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 201
-  zoom: 0.6099999
+  zoom: 0.85000014
   scrollViewRect:
     serializedVersion: 2
     x: 0
@@ -1858,9 +1859,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 596701594}
+  - {fileID: 596701573}
   selectedCommands:
-  - {fileID: 596701601}
+  - {fileID: 596701607}
   variables:
   - {fileID: 596701567}
   - {fileID: 596701570}
@@ -1922,7 +1923,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5718.8193
     y: 10209.695
-    width: 69.672134
+    width: 71.17647
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1999,9 +2000,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -5601.6934
-    y: 10297.986
-    width: 104.09837
+    x: -5599.254
+    y: 10296.767
+    width: 108.82352
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2012,6 +2013,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 596701590}
   - {fileID: 596701589}
+  - {fileID: 596701607}
   - {fileID: 596701603}
   suppressAllAutoSelections: 0
 --- !u!114 &596701574
@@ -2100,7 +2102,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5901.3506
     y: 10202.917
-    width: 112.29509
+    width: 117.058815
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2150,7 +2152,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5599.8716
     y: 10115.105
-    width: 100.81968
+    width: 104.11764
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2855,12 +2857,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 19
   indentLevel: 0
-  storyText: "Jag ska se till att v\xE4xa lite blommor till dig i framtiden! Jag
-    har redan k\xF6pt krukorna, har du n\xE5gon favoritblomma? "
+  storyText: "Jag ska se till att v\xE4xa lite blommor till dig i framtiden!"
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 6d66e0aedcbd2614facdaf07b6c770e9, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2888,7 +2889,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: f5c3fa00cb650f84dbd2c9e51bf6ef29, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2911,9 +2912,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -5404.2026
-    y: 10203.373
-    width: 128.68854
+    x: -5402.983
+    y: 10207.032
+    width: 134.70587
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2974,9 +2975,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -5601.3477
-    y: 10208.967
-    width: 94.2623
+    x: -5596.4688
+    y: 10210.187
+    width: 98.23529
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3425,7 +3426,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &596701605
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3454,7 +3455,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &596701606
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3472,6 +3473,33 @@ MonoBehaviour:
   character: {fileID: 3344033746429994667}
   portrait: {fileID: 21300000, guid: efa812f12ae3f5147a76ecbf7fbe9842, type: 3}
   voiceOverClip: {fileID: 8300000, guid: 99acc7b8175abcb46bad324bc268ddc5, type: 3}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &596701607
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596701563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 90
+  indentLevel: 0
+  storyText: "Jag har redan k\xF6pt krukorna, har du n\xE5gon favoritblomma? "
+  description: 
+  character: {fileID: 1017009080}
+  portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 900e246f2b47e7e4fa0d9d71f62dc476, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -19121,6 +19149,10 @@ GameObject:
   - component: {fileID: 8426445694177617981}
   - component: {fileID: 8426445694177617980}
   - component: {fileID: 8426445694177617979}
+  - component: {fileID: 8426445694177618041}
+  - component: {fileID: 8426445694177618040}
+  - component: {fileID: 8426445694177618039}
+  - component: {fileID: 8426445694177618042}
   m_Layer: 0
   m_Name: Unkel
   m_TagString: Untagged
@@ -19141,11 +19173,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 378.4007, y: 426.10736}
+  scrollPos: {x: 423.4354, y: 361.61868}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 261
-  zoom: 1
+  zoom: 0.7000003
   scrollViewRect:
     serializedVersion: 2
     x: 0
@@ -19153,9 +19185,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 8426445694177618009}
+  - {fileID: 8426445694177617985}
   selectedCommands:
-  - {fileID: 8426445694177618004}
+  - {fileID: 8426445694177617984}
   variables:
   - {fileID: 8426445694177617983}
   description: 
@@ -19233,12 +19265,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 78
   indentLevel: 1
-  storyText: "Varf\xF6r ger du mig detta? Ingen har gett mig n\xE5got fint sedan
-    jag \xE5terv\xE4nde till byn\u2026 \r\n\t\n"
+  storyText: "Varf\xF6r ger du mig detta?"
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: d42da7a00badddb4588bb74f5484ab7c, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -19280,7 +19311,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 067d11c53cd69cf469fdb4589bae44f6, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -19305,7 +19336,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -161.6695
     y: 50.84749
-    width: 105.333336
+    width: 144.28568
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -19762,7 +19793,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -163.10858
     y: 1.712204
-    width: 101.333336
+    width: 137.14282
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -19962,7 +19993,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 3928da0a5e40cc444a7ca03166667f97, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -19989,7 +20020,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: f3aaafd8e1eb761479c51029332dd91c, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -20257,7 +20288,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -159.03647
     y: -47.576447
-    width: 102
+    width: 138.5714
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20452,12 +20483,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 59
   indentLevel: 1
-  storyText: "Precis som d\xE5 v\xE4rmer detta lika v\xE4l.\r\nDe andra i byn vet
-    inte hur bra de har det, de \xE4r f\xF6r unga f\xF6r att veta n\xE5got om det.\r\n\n"
+  storyText: "Precis som d\xE5 v\xE4rmer detta lika v\xE4l.\r\n\n"
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: d8279b7bec63fcd4290407e91dfa5d9b, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -20485,7 +20515,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: d8279b7bec63fcd4290407e91dfa5d9b, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -20751,9 +20781,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -164.06738
-    y: -93.29816
-    width: 102
+    x: -162.69754
+    y: -98.77762
+    width: 138.5714
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20766,6 +20796,7 @@ MonoBehaviour:
   - {fileID: 8426445694177617980}
   - {fileID: 8426445694177618000}
   - {fileID: 8426445694177617999}
+  - {fileID: 8426445694177618039}
   - {fileID: 8426445694177617998}
   - {fileID: 8426445694177617997}
   suppressAllAutoSelections: 0
@@ -20953,7 +20984,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 5638b0062c636344192c6f0ba865b8c8, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -20981,7 +21012,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 1ee15c2fba65661459baf1276e197181, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -21004,11 +21035,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 50
   indentLevel: 1
-  storyText: "Mer g\xE5vor? Vad har jag gjort f\xF6r att f\xF6rtj\xE4na det?\r\n\n"
+  storyText: "Mer g\xE5vor?\n"
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 43dcf8d2bd50904498b31a4509293a15, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -21274,9 +21305,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -164.06738
-    y: -162.60736
-    width: 101.333336
+    x: -162.93102
+    y: -159.19827
+    width: 137.14282
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21288,6 +21319,7 @@ MonoBehaviour:
   - {fileID: 8426445694177618008}
   - {fileID: 8426445694177617981}
   - {fileID: 8426445694177618007}
+  - {fileID: 8426445694177618040}
   - {fileID: 8426445694177618006}
   - {fileID: 8426445694177618005}
   - {fileID: 8426445694177618004}
@@ -21477,7 +21509,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: a317c7e099f1e4644ae9f8382e75872d, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -21504,7 +21536,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 44c0e0eeb2d3cd84aa89ab3420d0aaca, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -21789,7 +21821,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -164.06738
     y: -211.60736
-    width: 100
+    width: 135.71425
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21803,6 +21835,7 @@ MonoBehaviour:
   - {fileID: 8426445694177618013}
   - {fileID: 8426445694177618012}
   - {fileID: 8426445694177617982}
+  - {fileID: 8426445694177618041}
   - {fileID: 8426445694177618011}
   - {fileID: 8426445694177618010}
   suppressAllAutoSelections: 0
@@ -21972,12 +22005,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 36
   indentLevel: 0
-  storyText: "Vad vill du? \xC4r det inte lite fr\xE4ckt att st\xF6ra en gammal gubbe
-    p\xE5 detta viset?\r\n"
+  storyText: "Vad vill du? \n"
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 45846477796efeb42b9ea9d3bd577ba2, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -22056,7 +22088,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -172.52612
     y: -268.10736
-    width: 126
+    width: 164.28568
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22068,6 +22100,7 @@ MonoBehaviour:
   - {fileID: 8426445694177618020}
   - {fileID: 8426445694177618019}
   - {fileID: 8426445694177618018}
+  - {fileID: 8426445694177618042}
   - {fileID: 8426445694177618017}
   suppressAllAutoSelections: 0
 --- !u!114 &8426445694177618022
@@ -23963,7 +23996,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -395.0124
     y: -105.53516
-    width: 146
+    width: 184.28566
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -23989,6 +24022,117 @@ MonoBehaviour:
   - {fileID: 8426445694177618024}
   - {fileID: 8426445694177618023}
   suppressAllAutoSelections: 0
+--- !u!114 &8426445694177618039
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8426445694177617977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 85
+  indentLevel: 1
+  storyText: "\nDe andra i byn vet inte hur bra de har det, de \xE4r f\xF6r unga
+    f\xF6r att veta n\xE5got om det.\r\n\n"
+  description: 
+  character: {fileID: 1017009080}
+  portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 1431498d5b93c884395a065da25a0fef, type: 3}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &8426445694177618040
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8426445694177617977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 84
+  indentLevel: 1
+  storyText: "Vad har jag gjort f\xF6r att f\xF6rtj\xE4na det?\r\n\n"
+  description: 
+  character: {fileID: 1017009080}
+  portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 9a13ee1eb8ec7fa4eabf7b8f1f62a78f, type: 3}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &8426445694177618041
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8426445694177617977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 83
+  indentLevel: 1
+  storyText: "Ingen har gett mig n\xE5got fint sedan jag \xE5terv\xE4nde till byn\u2026
+    \r\n\t\n"
+  description: 
+  character: {fileID: 1017009080}
+  portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: c86881abb52c0764fb5706b466ebdeb4, type: 3}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &8426445694177618042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8426445694177617977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 86
+  indentLevel: 0
+  storyText: "\xC4r det inte lite fr\xE4ckt att st\xF6ra en gammal gubbe p\xE5 detta
+    viset?\r\r\n"
+  description: 
+  character: {fileID: 1017009080}
+  portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: e406ac333dac32448b1aae11726325af, type: 3}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &8539080438075592402
 MonoBehaviour:
   m_ObjectHideFlags: 2
