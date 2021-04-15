@@ -111,39 +111,38 @@ public class Inventory
 
     public void RemoveBasedOnTypeFlower()
     {
-        foreach(Item flowerItemInInventory in itemList)
-        {
-            switch (flowerItemInInventory.itemType)
+       
+            switch (GameManager.currentTool)
             {
                 default:
                     break;
 
-                case Item.ItemType.Daisy:
+                case "daisy":
                     Player.GetInventory().RemoveItem(new Item { itemType = Item.ItemType.Daisy, amount = 1 });
                     Player.GetInventory().CheckForItem();
                     Debug.Log("Tog bort Daisy");
                     break;
 
-                case Item.ItemType.Rose:
+                case "rose":
                     Player.GetInventory().RemoveItem(new Item { itemType = Item.ItemType.Rose, amount = 1 });
                     Player.GetInventory().CheckForItem();
                     Debug.Log("Tog bort Rose");
                     break;
 
-                case Item.ItemType.Tulip:
+                case "tulip":
                     Player.GetInventory().RemoveItem(new Item { itemType = Item.ItemType.Tulip, amount = 1 });
                     Player.GetInventory().CheckForItem();
                     Debug.Log("Tog bort Tulip");
                     break;
 
-                case Item.ItemType.Violet:
+                case "violet":
                     Player.GetInventory().RemoveItem(new Item { itemType = Item.ItemType.Violet, amount = 1 });
                     Player.GetInventory().CheckForItem();
                     Debug.Log("Tog bort Violet");
                     break;
             }
           
-        }
+       
     }
 }
         

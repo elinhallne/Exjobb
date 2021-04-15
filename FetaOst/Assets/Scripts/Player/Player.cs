@@ -38,17 +38,28 @@ public class Player : MonoBehaviour
         {
             case Item.ItemType.Seed:
                 {
-                    GameManager.currentTool = "seed";
-                    
+                    GameManager.currentTool = "seed";                    
                     break;
                 }
+
             case Item.ItemType.WaterCan:
                 GameManager.currentTool = "waterCan";
                 break;
 
             case Item.ItemType.Daisy:
-                GameManager.currentTool = "daisy";
-                
+                GameManager.currentTool = "daisy";                
+                break;
+
+            case Item.ItemType.Rose:
+                GameManager.currentTool = "rose";
+                break;
+
+            case Item.ItemType.Tulip:
+                GameManager.currentTool = "tulip";
+                break;
+
+            case Item.ItemType.Violet:
+                GameManager.currentTool = "violet";
                 break;
         }
     }
