@@ -1783,6 +1783,7 @@ GameObject:
   - component: {fileID: 596701606}
   - component: {fileID: 596701605}
   - component: {fileID: 596701607}
+  - component: {fileID: 596701608}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1859,9 +1860,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 596701573}
+  - {fileID: 596701579}
   selectedCommands:
-  - {fileID: 596701607}
+  - {fileID: 596701585}
   variables:
   - {fileID: 596701567}
   - {fileID: 596701570}
@@ -2165,6 +2166,7 @@ MonoBehaviour:
   - {fileID: 596701587}
   - {fileID: 596701586}
   - {fileID: 596701585}
+  - {fileID: 596701608}
   - {fileID: 596701584}
   - {fileID: 596701583}
   - {fileID: 596701604}
@@ -2746,8 +2748,7 @@ MonoBehaviour:
   itemId: 14
   indentLevel: 0
   storyText: "Jag v\xE5gar inte \xE5ka sj\xE4lv. Det \xE4r f\xF6rsta g\xE5ngen vi
-    tr\xE4ffas i person. T\xE4nk om hon inte tycker om mig eller tycker att jag \xE4r
-    ful. \r\n"
+    tr\xE4ffas i person. "
   description: 
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
@@ -3508,6 +3509,33 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &596701608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596701563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 91
+  indentLevel: 0
+  storyText: "T\xE4nk om hon inte tycker om mig eller tycker att jag \xE4r ful. \r\n"
+  description: 
+  character: {fileID: 6689115501710099173}
+  portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &635146925
 GameObject:
   m_ObjectHideFlags: 0
@@ -3794,7 +3822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 8426445693896952190}
+  selectedFlowchart: {fileID: 596701566}
 --- !u!4 &692364516
 Transform:
   m_ObjectHideFlags: 1
@@ -12617,7 +12645,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -347.9665
     y: -195.17052
-    width: 101
+    width: 99.45055
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12700,7 +12728,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -347.50726
     y: -408.62537
-    width: 96
+    width: 95.05494
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13948,7 +13976,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -349.40558
     y: -244.3058
-    width: 96
+    width: 95.05494
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14557,7 +14585,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -358.82312
     y: -514.12537
-    width: 121
+    width: 119.23077
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14973,7 +15001,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -348.19058
     y: -293.59442
-    width: 97
+    width: 96.15384
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14985,7 +15013,9 @@ MonoBehaviour:
   - {fileID: 8426445693896952213}
   - {fileID: 8426445693896952211}
   - {fileID: 8426445693896952203}
+  - {fileID: 8426445693896952236}
   - {fileID: 8426445693896952202}
+  - {fileID: 8426445693896952235}
   - {fileID: 8426445693896952212}
   - {fileID: 8426445693896952210}
   suppressAllAutoSelections: 0
@@ -15102,7 +15132,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -350.36438
     y: -457.62537
-    width: 95
+    width: 93.95604
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15966,7 +15996,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -581.3094
     y: -351.55316
-    width: 140
+    width: 140.10988
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16169,6 +16199,8 @@ GameObject:
   - component: {fileID: 8426445693896952229}
   - component: {fileID: 8426445693896952228}
   - component: {fileID: 8426445693896952223}
+  - component: {fileID: 8426445693896952236}
+  - component: {fileID: 8426445693896952235}
   m_Layer: 0
   m_Name: Kawi
   m_TagString: Untagged
@@ -16189,11 +16221,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 500.97156, y: 678.8694}
+  scrollPos: {x: 532.87524, y: 551.576}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 206
-  zoom: 1
+  zoom: 0.9100001
   scrollViewRect:
     serializedVersion: 2
     x: 0
@@ -16201,7 +16233,7 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 8875012123371071831}
+  - {fileID: 4524054378375192365}
   selectedCommands: []
   variables:
   - {fileID: 9020234520736726907}
@@ -16275,7 +16307,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 0840c938d50fef64aad6b742673c90a1, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -16518,12 +16550,11 @@ MonoBehaviour:
   itemId: 43
   indentLevel: 1
   storyText: "Jag l\xE4ste h\xE4r om dagen att efter att bin parar sig i luften,
-    efter\xE5t f\xF6rlorar manbiet sina reproduktionsorgan. Tur att jag och min \xE4lskare
-    inte har det problemet.\n"
+    efter\xE5t f\xF6rlorar manbiet sina reproduktionsorgan. "
   description: 
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 03b3cbe0cff546041b92076dc01d8cfc, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -16546,13 +16577,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 42
   indentLevel: 1
-  storyText: "Hej s\xF6tnos! Visste du att jag tycker dina blommor \xE4r de b\xE4sta!
-    De har alltid  j\xE4ttebra f\xE4rger och doftar gudomligt, som min \xE4lskare
-    i Somalia.\n"
+  storyText: "Hej s\xF6tnos! Visste du att jag tycker dina blommor \xE4r de b\xE4sta!\n"
   description: 
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 3dc895072fb281c45a8e14eae7e4cd02, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -18336,7 +18365,7 @@ MonoBehaviour:
   indentLevel: 0
 --- !u!114 &8426445693896952223
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -19019,7 +19048,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &8426445693896952228
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -19046,7 +19075,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &8426445693896952229
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -19073,7 +19102,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &8426445693896952230
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -19101,7 +19130,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &8426445693896952231
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -19128,7 +19157,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &8426445693896952232
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -19155,7 +19184,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &8426445693896952233
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -19182,7 +19211,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &8426445693896952234
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -19200,6 +19229,61 @@ MonoBehaviour:
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
   voiceOverClip: {fileID: 8300000, guid: f077c5c2b6085b64fb0b388bc53a1fef, type: 3}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &8426445693896952235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8426445693896952189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 79
+  indentLevel: 1
+  storyText: "Tur att jag och min \xE4lskare inte har det problemet.\n"
+  description: 
+  character: {fileID: 6689115501710099173}
+  portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: 47cadf1a329645b449a6ce752f1ab73b, type: 3}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &8426445693896952236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8426445693896952189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 78
+  indentLevel: 1
+  storyText: "De har alltid  j\xE4ttebra f\xE4rger och doftar gudomligt, som min
+    \xE4lskare i Somalia.\n"
+  description: 
+  character: {fileID: 6689115501710099173}
+  portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: c1d30ab921b4c3b4e871046a920a4b4a, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -24681,7 +24765,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -350.36438
     y: -339.31616
-    width: 97
+    width: 96.15384
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
