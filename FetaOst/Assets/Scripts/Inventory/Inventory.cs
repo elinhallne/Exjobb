@@ -11,10 +11,13 @@ public class Inventory
     private List<Item> itemList;
     private Action<Item> useItemAction;
 
+    private List<Item> flowerList;
+
     public Inventory(Action<Item> useItemAction)
     {
         this.useItemAction = useItemAction;
         itemList = new List<Item>();
+        flowerList = new List<Item>();
 
         AddItem(new Item { itemType = Item.ItemType.WaterCan, amount = 1 });
         AddItem(new Item { itemType = Item.ItemType.Seed, amount = 10 });
@@ -46,6 +49,10 @@ public class Inventory
         else
         {
             itemList.Add(item);
+        }
+        if (item.IsFlower())
+        {
+            flowerList.Add(item);
         }
 
         OnItemListChange?.Invoke(this, EventArgs.Empty);
@@ -111,9 +118,9 @@ public class Inventory
 
     public void RemoveBasedOnTypeFlower()
     {
-        foreach(Item flowerItemInInventory in itemList)
-        {
-            switch (flowerItemInInventory.itemType)
+        Item item = flowerList[0];
+
+            switch (item.itemType)
             {
                 default:
                     break;
@@ -121,29 +128,33 @@ public class Inventory
                 case Item.ItemType.Daisy:
                     Player.GetInventory().RemoveItem(new Item { itemType = Item.ItemType.Daisy, amount = 1 });
                     Player.GetInventory().CheckForItem();
+                    flowerList.Remove(item);
                     Debug.Log("Tog bort Daisy");
                     break;
 
                 case Item.ItemType.Rose:
                     Player.GetInventory().RemoveItem(new Item { itemType = Item.ItemType.Rose, amount = 1 });
                     Player.GetInventory().CheckForItem();
+                    flowerList.Remove(item);
                     Debug.Log("Tog bort Rose");
                     break;
 
                 case Item.ItemType.Tulip:
                     Player.GetInventory().RemoveItem(new Item { itemType = Item.ItemType.Tulip, amount = 1 });
                     Player.GetInventory().CheckForItem();
+                    flowerList.Remove(item);
                     Debug.Log("Tog bort Tulip");
                     break;
 
                 case Item.ItemType.Violet:
                     Player.GetInventory().RemoveItem(new Item { itemType = Item.ItemType.Violet, amount = 1 });
                     Player.GetInventory().CheckForItem();
+                    flowerList.Remove(item);
                     Debug.Log("Tog bort Violet");
                     break;
             }
           
-        }
+       
     }
 }
         
