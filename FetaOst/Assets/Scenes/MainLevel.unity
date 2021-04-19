@@ -1336,7 +1336,7 @@ MonoBehaviour:
   daisySprites:
   - {fileID: 21300000, guid: c619e07d2006b5141997c354e286da26, type: 3}
   - {fileID: 21300000, guid: fb9970feb8b80cc4aa5bea819709d944, type: 3}
-  - {fileID: 21300000, guid: 1844620fa148d4dc89443ca7b33205e1, type: 3}
+  - {fileID: 21300000, guid: 8697eeff1fa393543a579afd0ea57bd6, type: 3}
   roseSprites:
   - {fileID: 21300000, guid: c619e07d2006b5141997c354e286da26, type: 3}
   - {fileID: 21300000, guid: fb9970feb8b80cc4aa5bea819709d944, type: 3}
@@ -1344,11 +1344,11 @@ MonoBehaviour:
   tulipSprites:
   - {fileID: 21300000, guid: c619e07d2006b5141997c354e286da26, type: 3}
   - {fileID: 21300000, guid: fb9970feb8b80cc4aa5bea819709d944, type: 3}
-  - {fileID: 21300000, guid: ce1033825520e4b44acf670590d08f63, type: 3}
+  - {fileID: 21300000, guid: 98f4ac3bc63c73a44ae9e2cab1cc982e, type: 3}
   violetSprites:
   - {fileID: 21300000, guid: c619e07d2006b5141997c354e286da26, type: 3}
   - {fileID: 21300000, guid: fb9970feb8b80cc4aa5bea819709d944, type: 3}
-  - {fileID: 21300000, guid: efa812f12ae3f5147a76ecbf7fbe9842, type: 3}
+  - {fileID: 21300000, guid: 9679954d1046c7a42b9f391647d8b0cb, type: 3}
 --- !u!4 &400724681
 Transform:
   m_ObjectHideFlags: 0
@@ -5602,10 +5602,11 @@ MonoBehaviour:
     type: 3}
   waterCanSprite: {fileID: 21300000, guid: eb4ea482f01bab84099b02bd7d699236, type: 3}
   seedSprite: {fileID: 21300000, guid: c619e07d2006b5141997c354e286da26, type: 3}
-  daisySprite: {fileID: 21300000, guid: 1844620fa148d4dc89443ca7b33205e1, type: 3}
+  daisySprite: {fileID: 21300000, guid: 8697eeff1fa393543a579afd0ea57bd6, type: 3}
   roseSprite: {fileID: 21300000, guid: ff7da9b56ed280f41b716734a6ef38e5, type: 3}
-  tulipSprite: {fileID: 21300000, guid: 866f95d9dc530204ca65638ab0a20b9a, type: 3}
-  violetSprite: {fileID: 21300000, guid: efa812f12ae3f5147a76ecbf7fbe9842, type: 3}
+  tulipSprite: {fileID: 21300000, guid: 98f4ac3bc63c73a44ae9e2cab1cc982e, type: 3}
+  violetSprite: {fileID: 21300000, guid: 9679954d1046c7a42b9f391647d8b0cb, type: 3}
+  journalSprite: {fileID: 0}
 --- !u!4 &1446121241
 Transform:
   m_ObjectHideFlags: 0
