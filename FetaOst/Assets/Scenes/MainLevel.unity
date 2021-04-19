@@ -1848,11 +1848,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 5775.8774, y: -10028.106}
+  scrollPos: {x: 6016.954, y: -10027.125}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 201
-  zoom: 0.85000014
+  zoom: 0.94000006
   scrollViewRect:
     serializedVersion: 2
     x: 0
@@ -1860,9 +1860,8 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 596701579}
-  selectedCommands:
-  - {fileID: 596701585}
+  - {fileID: 596701573}
+  selectedCommands: []
   variables:
   - {fileID: 596701567}
   - {fileID: 596701570}
@@ -1924,7 +1923,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5718.8193
     y: 10209.695
-    width: 71.17647
+    width: 72.34042
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2003,7 +2002,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5599.254
     y: 10296.767
-    width: 108.82352
+    width: 109.57446
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2103,7 +2102,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5901.3506
     y: 10202.917
-    width: 117.058815
+    width: 119.14893
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2153,7 +2152,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5599.8716
     y: 10115.105
-    width: 104.11764
+    width: 104.25532
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2696,7 +2695,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 160b4dceafeee8c42be996906fc61992, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2752,7 +2751,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 5c0e1b3ef830d6741bba66638ec50130, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2779,7 +2778,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: cbc7efd848a3ecb4aa0addd61bd63d41, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2807,7 +2806,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 398f07a0beb76ec47811dc8ca45f58dd, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2835,7 +2834,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: cde654c6296a92b4b8f95390143dcf51, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2915,7 +2914,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5402.983
     y: 10207.032
-    width: 134.70587
+    width: 135.10638
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2978,7 +2977,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5596.4688
     y: 10210.187
-    width: 98.23529
+    width: 98.93617
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3511,7 +3510,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &596701608
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3527,7 +3526,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 787dd9ad024bb6e4181ae04f478e6c0d, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -3822,7 +3821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 8426445693896952190}
+  selectedFlowchart: {fileID: 596701566}
 --- !u!4 &692364516
 Transform:
   m_ObjectHideFlags: 1
