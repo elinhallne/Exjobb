@@ -19,4 +19,5 @@ public class ItemAsset : MonoBehaviour
     public Sprite roseSprite;
     public Sprite tulipSprite;
     public Sprite violetSprite;
+    public Sprite journalSprite;
 }

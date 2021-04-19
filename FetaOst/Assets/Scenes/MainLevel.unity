@@ -3821,7 +3821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 596701566}
+  selectedFlowchart: {fileID: 8426445694177617978}
 --- !u!4 &692364516
 Transform:
   m_ObjectHideFlags: 1
@@ -19482,11 +19482,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 423.4354, y: 361.61868}
+  scrollPos: {x: 408.51944, y: 325.4966}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 261
-  zoom: 0.7000003
+  zoom: 0.73000026
   scrollViewRect:
     serializedVersion: 2
     x: 0
@@ -19494,9 +19494,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 8426445694177617985}
+  - {fileID: 8426445694177618002}
   selectedCommands:
-  - {fileID: 8426445694177617984}
+  - {fileID: 8426445694177618039}
   variables:
   - {fileID: 8426445694177617983}
   description: 
@@ -19645,7 +19645,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -161.6695
     y: 50.84749
-    width: 144.28568
+    width: 141.78079
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20102,7 +20102,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -163.10858
     y: 1.712204
-    width: 137.14282
+    width: 136.30133
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20597,7 +20597,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -159.03647
     y: -47.576447
-    width: 138.5714
+    width: 137.6712
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -20796,7 +20796,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
-  voiceOverClip: {fileID: 8300000, guid: d8279b7bec63fcd4290407e91dfa5d9b, type: 3}
+  voiceOverClip: {fileID: 8300000, guid: a88b0699ca9c62b4ea50ba078656a455, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -21092,7 +21092,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -162.69754
     y: -98.77762
-    width: 138.5714
+    width: 137.6712
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -21616,7 +21616,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -162.93102
     y: -159.19827
-    width: 137.14282
+    width: 136.30133
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22130,7 +22130,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -164.06738
     y: -211.60736
-    width: 135.71425
+    width: 134.93149
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -22397,7 +22397,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -172.52612
     y: -268.10736
-    width: 164.28568
+    width: 160.95886
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -24305,7 +24305,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -395.0124
     y: -105.53516
-    width: 184.28566
+    width: 180.13695
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -24345,8 +24345,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 85
   indentLevel: 1
-  storyText: "\nDe andra i byn vet inte hur bra de har det, de \xE4r f\xF6r unga
-    f\xF6r att veta n\xE5got om det.\r\n\n"
+  storyText: "De andra i byn vet inte hur bra de har det, de \xE4r f\xF6r unga f\xF6r
+    att veta n\xE5got om det.\r\n\n"
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
@@ -24416,7 +24416,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &8426445694177618042
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

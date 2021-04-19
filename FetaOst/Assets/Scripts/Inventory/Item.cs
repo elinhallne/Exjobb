@@ -14,6 +14,7 @@ public class Item
         Rose,
         Tulip,
         Violet,
+        Journal,
     }
 
     public ItemType itemType;
@@ -30,6 +31,7 @@ public class Item
             case ItemType.Rose:     return ItemAsset.Instance.roseSprite;
             case ItemType.Tulip:    return ItemAsset.Instance.tulipSprite;
             case ItemType.Violet:   return ItemAsset.Instance.violetSprite;
+            case ItemType.Journal:  return ItemAsset.Instance.journalSprite;
         }
     }
 
@@ -45,6 +47,7 @@ public class Item
             case ItemType.Violet:
                 return true;
             case ItemType.WaterCan:
+            case ItemType.Journal:
                 return false;
         }
     }
@@ -60,6 +63,7 @@ public class Item
                 return true;
             case ItemType.Seed:
             case ItemType.WaterCan:
+            case ItemType.Journal:
                 return false;
         }
           
