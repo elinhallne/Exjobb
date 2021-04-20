@@ -20,6 +20,7 @@ public class Inventory
         flowerList = new List<Item>();
 
         AddItem(new Item { itemType = Item.ItemType.WaterCan, amount = 1 });
+        AddItem(new Item { itemType = Item.ItemType.Journal, amount = 1 });
         AddItem(new Item { itemType = Item.ItemType.Seed, amount = 10 });
         
 

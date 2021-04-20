@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
 {
     [SerializeField] 
     private UI_Inventory uiInventory;
+    [SerializeField]
+    private GameObject goj_Journal;
 
     private static Inventory inventory;
 
@@ -60,6 +62,10 @@ public class Player : MonoBehaviour
 
             case Item.ItemType.Violet:
                 GameManager.currentTool = "violet";
+                break;
+
+            case Item.ItemType.Journal:
+                goj_Journal.SetActive(true);
                 break;
         }
     }

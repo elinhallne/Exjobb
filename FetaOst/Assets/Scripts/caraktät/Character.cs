@@ -12,6 +12,7 @@ public class Character
 	public GameObject gameObject;
 	public LoveMeter loveMeter;
 	public float loveMeterValue;
+	public GameObject journal;
 		
 	public Character(string aName, LoveMeter aLoveMeter)
 	{
