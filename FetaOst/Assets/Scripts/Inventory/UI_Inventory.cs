@@ -69,8 +69,7 @@ public class UI_Inventory : MonoBehaviour
             TextMeshProUGUI uiText = itemSlotRectTransform.Find("text").GetComponent<TextMeshProUGUI>();
             if (item.amount > 1)
             {
-                Debug.Log(item.amount);
-                uiText.SetText(item.amount.ToString());
+                 uiText.SetText(item.amount.ToString());
             } else
             {
                 uiText.SetText("");

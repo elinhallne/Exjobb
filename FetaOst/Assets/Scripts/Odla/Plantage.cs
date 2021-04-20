@@ -44,7 +44,6 @@ public class Plantage : MonoBehaviour
 			spriteRendererFlower.sprite = flower.GrowStatus(timeToGrow, flower);
 
 			BrunnScript.amountOfWaterInCan -= 0.1f;
-			Debug.Log("Current Grow Time: " + timeToGrow);
 			timeToGrow++;
 		}
 		
@@ -52,7 +51,7 @@ public class Plantage : MonoBehaviour
 
 	private int RandomInteger()
     {
-		int randNr = UnityEngine.Random.Range(1, 4);
+		int randNr = UnityEngine.Random.Range(1, 5);
 		return randNr;
     }
 	
