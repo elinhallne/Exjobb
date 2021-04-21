@@ -23,6 +23,10 @@ public class SettingsMenu : MonoBehaviour
 
     void Start()
     {
+        audioMixer = GlobalOptionsControl.Instance.audioMixer;
+        resolutionDropDown.value = GlobalOptionsControl.Instance.resolutionDropDown;
+        GraphicsDropDown.value = GlobalOptionsControl.Instance.GraphicsDropDown;
+
        resolutions = Screen.resolutions;
 
         resolutionDropDown.ClearOptions();
@@ -47,7 +51,10 @@ public class SettingsMenu : MonoBehaviour
         
 
     }
-
+    private void Update()
+    {
+        SaveData();
+    }
     public void SetResolution (int resolutionIndex)
     {
         Resolution resolution = resolutions[resolutionIndex];
@@ -70,4 +77,11 @@ public class SettingsMenu : MonoBehaviour
     {
         Screen.fullScreen = isFullscreen;
     }
+    
+    private void SaveData()
+    {
+        GlobalOptionsControl.Instance.audioMixer = audioMixer;
+        GlobalOptionsControl.Instance.resolutionDropDown = resolutionDropDown.value;
+        GlobalOptionsControl.Instance.GraphicsDropDown = GraphicsDropDown.value;      
+}
 }
