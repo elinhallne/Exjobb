@@ -20,8 +20,9 @@ public class ChangeText : MonoBehaviour
     public Dropdown myDropdown;
     int myDropdownValue;
     private Text[] texts;
-   // private TMP_Text[] textPROs;
-
+    // private TMP_Text[] textPROs;
+  
+   // RectTransform myRectTransform;
 
 
     // Start is called before the first frame update
@@ -35,19 +36,31 @@ public class ChangeText : MonoBehaviour
 
 
         texts = Resources.FindObjectsOfTypeAll<Text>();
-        //textPROs = Resources.FindObjectsOfTypeAll<TMP_Text>(); 
-       /* foreach (Text text in texts)
-        {
-            //text.font = fonts;
-            text.font = myFonts[counter];
-        }
+        //myRectTransform = GetComponent<RectTransform>();
 
-        myDropdown.onValueChanged.AddListener(delegate
-        {
-            myDropDownValueChangedHappened(myDropdown);
-        });*/
+
+        //textPROs = Resources.FindObjectsOfTypeAll<TMP_Text>(); 
+        /* foreach (Text text in texts)
+         {
+             //text.font = fonts;
+             text.font = myFonts[counter];
+         }
+
+         myDropdown.onValueChanged.AddListener(delegate
+         {
+             myDropDownValueChangedHappened(myDropdown);
+         });*/
 
     }
+   /* public void changeFontSize()
+    {
+        myRectTransform.sizeDelta = new Vector2(text.fontSize * 10, 100);
+        text.fontSize = 30;
+        b = new Bounds(new Vector3(0, 0, 0), new Vector3(1, 2, 1));
+
+     
+    }*/
+    //1500 x335
 
     public void myDropDownValueChangedHappened(Dropdown sender)
     {
