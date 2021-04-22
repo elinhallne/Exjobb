@@ -14,8 +14,8 @@ public class ChangeText : MonoBehaviour
     private Text text;
    // private TMP_Text textPRO;
     private int counter = 0;
-    
-    
+
+    private int fontSize;
     public Dropdown myDropdown;
     private Text[] texts;
     // private TMP_Text[] textPROs;
@@ -47,14 +47,13 @@ public class ChangeText : MonoBehaviour
          });*/
 
     }
-   /* public void changeFontSize()
+   private int ChangeFontSize(int size)
     {
-        myRectTransform.sizeDelta = new Vector2(text.fontSize * 10, 100);
-        text.fontSize = 30;
-        b = new Bounds(new Vector3(0, 0, 0), new Vector3(1, 2, 1));
-
-     
-    }*/
+        //if (counter )
+        fontSize = text.fontSize - size;
+        return fontSize;
+             
+    }
     //1500 x335
 
     public void myDropDownValueChangedHappened(Dropdown sender)
@@ -64,12 +63,15 @@ public class ChangeText : MonoBehaviour
         {
             case 0:
                 counter = 0;
+                
                 break;
             case 1:
                 counter = 1;
+                
                 break;
             case 2:
                 counter = 2;
+                
                 break;
         }
     }
@@ -78,8 +80,7 @@ public class ChangeText : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        UpdateText();
-        SaveData();
+        
      
         /*foreach (TMP_Text text in textPROs)
         {
@@ -89,6 +90,8 @@ public class ChangeText : MonoBehaviour
         myDropdown.onValueChanged.AddListener(delegate
         {
             myDropDownValueChangedHappened(myDropdown);
+            UpdateText();
+            SaveData();
         });
 
     }
@@ -98,7 +101,7 @@ public class ChangeText : MonoBehaviour
         foreach (Text text in texts)
         {
             text.font = myFonts[counter];
-
+            //text.fontSize = fontSize;
         }
     }
 
