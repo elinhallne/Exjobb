@@ -621,7 +621,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Du har klarat spelet! \nGrattis!!"
+  m_text: "Du f\xE5r stanna i byn! \nGrattis!!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -666,7 +666,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 23
+  m_firstOverflowCharacterIndex: 22
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -690,10 +690,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1433706501}
-    characterCount: 32
+    characterCount: 31
     spriteCount: 0
-    spaceCount: 5
-    wordCount: 5
+    spaceCount: 6
+    wordCount: 6
     linkCount: 0
     lineCount: 2
     pageCount: 1
@@ -860,7 +860,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Utvecklare:\nElin Hallne \nPernilla J\xF6nsson\n\nR\xF6stsk\xE5despelare:\nPernilla
-    Eriksson (Roll)\nVilma (Roll)\nSebastian (Roll)"
+    Eriksson (Noir)\nVilma Halvarsson (Kawi)\nSebastian Berni (Unkel)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -905,7 +905,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 99
+  m_firstOverflowCharacterIndex: 110
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -929,10 +929,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1965807398}
-    characterCount: 115
+    characterCount: 133
     spriteCount: 0
-    spaceCount: 14
-    wordCount: 13
+    spaceCount: 16
+    wordCount: 15
     linkCount: 0
     lineCount: 8
     pageCount: 1
