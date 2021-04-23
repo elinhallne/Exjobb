@@ -687,9 +687,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counter: 0
-  audioMixer: {fileID: 0}
-  resolutionDropDown: 0
-  GraphicsDropDown: 0
+  volume: 0
 --- !u!4 &127315309
 Transform:
   m_ObjectHideFlags: 0
@@ -3942,7 +3940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 596701566}
+  selectedFlowchart: {fileID: 8426445694177617978}
 --- !u!4 &692364516
 Transform:
   m_ObjectHideFlags: 1
@@ -19354,6 +19352,7 @@ GameObject:
   - component: {fileID: 8426445694177617981}
   - component: {fileID: 8426445694177617980}
   - component: {fileID: 8426445694177617979}
+  - component: {fileID: 8426445694177618040}
   m_Layer: 0
   m_Name: Unkel
   m_TagString: Untagged
@@ -19385,8 +19384,10 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 8426445694177618038}
+  selectedCommands:
+  - {fileID: 8426445694177618040}
   variables:
   - {fileID: 8426445694177617983}
   description: 
@@ -24192,7 +24193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -395.0124
+    x: -396.0124
     y: -105.53516
     width: 141
     height: 40
@@ -24204,6 +24205,7 @@ MonoBehaviour:
     dialog\n"
   eventHandler: {fileID: 8426445694177618022}
   commandList:
+  - {fileID: 8426445694177618040}
   - {fileID: 8426445694177618037}
   - {fileID: 8426445694177618036}
   - {fileID: 8426445694177618035}
@@ -24220,6 +24222,23 @@ MonoBehaviour:
   - {fileID: 8426445694177618024}
   - {fileID: 8426445694177618023}
   suppressAllAutoSelections: 0
+--- !u!114 &8426445694177618040
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8426445694177617977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a48b215ce0c03c40b1cd99eb75dd2ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 84
+  indentLevel: 0
+  mixer: {fileID: 24100000, guid: 0ba74c96d554c264a91b5095b7193b5b, type: 2}
+  parameterName: volume
+  parameterValue: -80
 --- !u!114 &8539080438075592402
 MonoBehaviour:
   m_ObjectHideFlags: 2
