@@ -270,7 +270,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Bin gillar lavendel p.g.a. den bl\xE5 f\xE4rgen.\r\n"
+  m_Text: "En Dahlia betyder att man har bra smak p\xE5 blomspr\xE5k.\r\n\n\n"
 --- !u!222 &41909904
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -848,7 +848,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Bin d\xF6r efter sex och mina blommor \xE4r bra!\r"
+  m_Text: "Noir verkar tycka om mig mer och ber\xF6mmer min blommor\r"
 --- !u!222 &98272528
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1747,7 +1747,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Kwai verkar b\xF6rja tycka mer om mig.\r\n"
+  m_Text: "Noirs mormors mor har bakat kaka till kungligheter \r\n\n"
 --- !u!222 &333338469
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2729,7 +2729,7 @@ RectTransform:
   - {fileID: 1279958514}
   - {fileID: 1813369268}
   m_Father: {fileID: 878973536}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2766,7 +2766,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 878973536}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3066,7 +3066,7 @@ RectTransform:
   - {fileID: 1469130168}
   - {fileID: 580718658}
   m_Father: {fileID: 878973536}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3315,11 +3315,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 6185.34, y: -9970.281}
+  scrollPos: {x: 7121.918, y: -8995.947}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 201
-  zoom: 0.64000034
+  zoom: 0.25
   scrollViewRect:
     serializedVersion: 2
     x: 0
@@ -3327,9 +3327,8 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 596701577}
-  selectedCommands:
-  - {fileID: 596701575}
+  - {fileID: 596701591}
+  selectedCommands: []
   variables:
   - {fileID: 596701567}
   - {fileID: 596701570}
@@ -3391,7 +3390,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5718.8193
     y: 10209.695
-    width: 68.74999
+    width: 74
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3470,7 +3469,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5599.254
     y: 10296.767
-    width: 103.12497
+    width: 114
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3512,23 +3511,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 4
   indentLevel: 0
-  storyText: "Du har precis {b}flytta till byn \xC4nglah\xE5lla{/b}, byn har bara
-    ett f\xE5tal inv\xE5nare. \xC4nglah\xE5lla \xE4r {b}k\xE4nt{/b} f\xF6r sina {b}vackra
-    odlingar av blommor{/b} som blomstrar genom hela sommaren. Det lockar turister
-    fr\xE5n hela Sverige. Den som inte passar in f\xE5r inte stanna kvar i \xC4nglah\xE5lla
-    l\xE4nge. \r\n{b}Din dr\xF6m{/b} har varit att {b}bo i \xC4nglah\xE5lla{/b} \xE4nda
-    sedan du var en liten r\xF6d panda baby. \r\n\r\nNu n\xE4r du v\xE4l \xE4r h\xE4r
-    k\xE4nner du dig {b}fruktansv\xE4rt r\xE4dd{/b}. R\xE4dd f\xF6r att inte passa
-    in i byn och {b}att de kommer tvinga dig att l\xE4mna{/b} om du inte n\xE5r m\xE5ttet.
-    Du har ett ess i rock\xE4rmen dock, du kan odla de vackraste blommorna. F\xF6r
-    att {b}\xF6ka dina chanser att f\xE5 stanna{/b} best\xE4mmer du dig f\xF6r att
-    {b}bli popul\xE4r{/b} bland dina grannar, genom att bli deras v\xE4nner. Om du
-    bara kan {b}bli v\xE4n med en person kan du \xF6ka dina chanser{/b}. \r\n\r\nEftersom
-    din enda talang \xE4r att odla blommor best\xE4mmer du att utnyttja din talang
-    och{b} ge dina grannar blommor{/b}. Du har allt du beh\xF6ver f\xF6r att {b}kunna
-    odla{/b} blommor, b\xE5de fr\xF6n och en vattenkanna. Se nu till att {b}skapa
-    lite v\xE4nskapliga relationer, s\xE5 att du f\xE5r stanna kvar{/b}. \r\n\r\nEtt
-    f\xF6rsta steg kan vara att g\xE5 runt i byn och presentera dig f\xF6r dina grannar.\r\n "
+  storyText: "Du har precis {b}{color=red}flytta till byn \xC4nglah\xE5lla{/color}{/b},
+    byn har bara ett f\xE5tal inv\xE5nare. \xC4nglah\xE5lla \xE4r {b}{color=red}k\xE4nt{/color}{/b}
+    f\xF6r sina {b}{color=red}vackra odlingar av blommor{/color}{/b} som blomstrar
+    genom hela sommaren. Det lockar turister fr\xE5n hela Sverige. Den som inte passar
+    in f\xE5r inte stanna kvar i \xC4nglah\xE5lla l\xE4nge. \r\n{b}{color=red}Din
+    dr\xF6m{/color}{/b} har varit att {b}{color=red}bo i \xC4nglah\xE5lla{/color}{/b}
+    \xE4nda sedan du var en liten r\xF6d panda baby. \r\n\r\nNu n\xE4r du v\xE4l
+    \xE4r h\xE4r k\xE4nner du dig {b}{color=red}fruktansv\xE4rt r\xE4dd{/color}{/b}.
+    R\xE4dd f\xF6r att inte passa in i byn och {b}{color=red}att de kommer tvinga
+    dig att l\xE4mna{/color}{/b} om du inte n\xE5r m\xE5ttet. Du har ett ess i rock\xE4rmen
+    dock, du kan odla de vackraste blommorna. F\xF6r att {b}{color=red}\xF6ka dina
+    chanser att f\xE5 stanna{/color}{/b} best\xE4mmer du dig f\xF6r att {b}{color=red}bli
+    popul\xE4r{/color}{/b} bland dina grannar, genom att bli deras v\xE4nner. Om
+    du bara kan {b}{color=red}bli v\xE4n med en person kan du \xF6ka dina chanser{/color}{/b}.
+    \r\n\r\nEftersom din enda talang \xE4r att odla blommor best\xE4mmer du att utnyttja
+    din talang och{b}{color=red} ge dina grannar blommor{/color}{/b}. Du har allt
+    du beh\xF6ver f\xF6r att {b}{color=red}kunna odla{/color}{/b} blommor, b\xE5de
+    fr\xF6n och en vattenkanna. Se nu till att {b}{color=red}skapa lite v\xE4nskapliga
+    relationer, s\xE5 att du f\xE5r stanna kvar{/color}{/b}. \r\n\r\n{b}{color=red}Ett
+    f\xF6rsta steg kan vara att g\xE5 runt i byn och presentera dig f\xF6r dina grannar.\r{/color}{/b}\n "
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -3571,7 +3573,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5900.1743
     y: 10202.917
-    width: 115.62496
+    width: 122
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3621,7 +3623,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5599.8716
     y: 10115.105
-    width: 98.43747
+    width: 110
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4215,8 +4217,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 0
-  storyText: "Jag {b}v\xE5gar inte \xE5ka sj\xE4lv{/b}. Det \xE4r f\xF6rsta g\xE5ngen
-    vi tr\xE4ffas i person. "
+  storyText: "Jag {b}{color=red}v\xE5gar inte \xE5ka sj\xE4lv{/color}{/b}. Det \xE4r
+    f\xF6rsta g\xE5ngen vi tr\xE4ffas i person. "
   description: 
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
@@ -4243,7 +4245,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 13
   indentLevel: 0
-  storyText: "{b}Kan du{/b} t\xE4nka dig att {b}f\xF6lja med till flygplatsen{/b}?"
+  storyText: "{b}{color=red}Kan du{/color}{/b} t\xE4nka dig att {b}{color=red}f\xF6lja
+    med till flygplatsen{/color}{/b}?"
   description: 
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
@@ -4270,8 +4273,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 12
   indentLevel: 0
-  storyText: "Jo det \xE4r s\xE5 att {b}hon kommer hit idag{/b}. Planet landar om
-    tv\xE5 timmar."
+  storyText: "Jo det \xE4r s\xE5 att {b}{color=red}hon kommer hit idag{/color}{/b}.
+    Planet landar om tv\xE5 timmar."
   description: 
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
@@ -4298,8 +4301,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 0
-  storyText: "Hej v\xE4nnen! Du, Jag har en {b}tj\xE4nst att be dig om{/b}, du vet
-    {b}min \xE4lskare{/b}, hon fr\xE5n Somalia."
+  storyText: "Hej v\xE4nnen! Du, Jag har en {b}{color=red}tj\xE4nst att be dig om{/color}{/b},
+    du vet {b}{color=red}min \xE4lskare{/color}{/b}, hon fr\xE5n Somalia."
   description: 
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
@@ -4326,7 +4329,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 19
   indentLevel: 0
-  storyText: "{b}Jag ska{/b} se till att {b}v\xE4xa lite blommor till dig{/b} i framtiden!"
+  storyText: "{b}{color=red}Jag ska{/color}{/b} se till att {b}{color=red}v\xE4xa
+    lite blommor till dig{/color}{/b} i framtiden!"
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
@@ -4383,7 +4387,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5402.983
     y: 10207.032
-    width: 126.56246
+    width: 142
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4445,7 +4449,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5596.4688
     y: 10210.187
-    width: 95.31248
+    width: 102
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4547,7 +4551,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 79
   indentLevel: 0
-  storyText: "S\xE5 jag t\xE4nkte {b}bjuda in dig{/b} eftersom vi \xE4r v\xE4nner."
+  storyText: "S\xE5 jag t\xE4nkte {b}{color=red}bjuda in dig{/color}{/b} eftersom
+    vi \xE4r v\xE4nner."
   description: 
   character: {fileID: 3344033746429994667}
   portrait: {fileID: 21300000, guid: efa812f12ae3f5147a76ecbf7fbe9842, type: 3}
@@ -4915,7 +4920,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 88
   indentLevel: 0
-  storyText: "Herrn kanske inte visste men {b}idag \xE4r det min f\xF6delsedag{/b}
+  storyText: "Herrn kanske inte visste men {b}{color=red}idag \xE4r det min f\xF6delsedag{/color}{/b}
     och jag hade planer p\xE5 att fira det med byn. "
   description: 
   character: {fileID: 3344033746429994667}
@@ -5238,7 +5243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &687385816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5354,7 +5359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 453834783341194544}
+  selectedFlowchart: {fileID: 596701566}
 --- !u!4 &692364516
 Transform:
   m_ObjectHideFlags: 1
@@ -5768,7 +5773,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 878973536}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6360,6 +6365,68 @@ Transform:
   m_Father: {fileID: 596701564}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &853485429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 853485430}
+  - component: {fileID: 853485431}
+  m_Layer: 5
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &853485430
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853485429}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 878973536}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!61 &853485431
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853485429}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.49999994}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1000, y: 1000}
+  m_EdgeRadius: 0
 --- !u!1 &877578340
 GameObject:
   m_ObjectHideFlags: 0
@@ -6392,7 +6459,7 @@ RectTransform:
   - {fileID: 1998313333}
   - {fileID: 1887779204}
   m_Father: {fileID: 878973536}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6426,6 +6493,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 853485430}
   - {fileID: 784858688}
   - {fileID: 512208302}
   - {fileID: 877578341}
@@ -7192,7 +7260,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Namn: Kawi\r\nHar en \xE4lskare i Somalia\r\n\n"
+  m_Text: "Namn: Noir \nHar bott i byn i 7 \xE5r.\r\n\n\n\n"
 --- !u!222 &1056256282
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8058,7 +8126,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Kwai gillar att odla blommor p.g.a. bin. Arbetsbin \xE4r bara kvinnor.\r\n"
+  m_Text: "Noir \xE4r kunnig inom blomspr\xE5k\r\n"
 --- !u!222 &1344960484
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10267,7 +10335,7 @@ RectTransform:
   - {fileID: 629237150}
   - {fileID: 1294339699}
   m_Father: {fileID: 878973536}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -14268,9 +14336,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 7317745035269177898}
+  - {fileID: 5509112489956555619}
   selectedCommands:
-  - {fileID: 453834783341194574}
+  - {fileID: 3058495631182613956}
   variables:
   - {fileID: 1122144402323004213}
   description: 
@@ -14568,7 +14636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 82
   indentLevel: 1
-  storyText: " \r\xC4r du bekant med {b}Blomspr\xE5ket{/b}? "
+  storyText: " \r\xC4r du bekant med {b}{color=red}Blomspr\xE5ket{/color}{/b}? "
   description: 
   character: {fileID: 3344033746429994667}
   portrait: {fileID: 21300000, guid: efa812f12ae3f5147a76ecbf7fbe9842, type: 3}
@@ -16939,7 +17007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 81
   indentLevel: 1
-  storyText: "Inte? Det var ju tr\xE5kigt, jag som alltid letar efter {b}kamrater{/b}
+  storyText: "Inte? Det var ju tr\xE5kigt, jag som alltid letar efter {b}{color=red}kamrater{/color}{/b}
     i blomspr\xE5ket.\r\n"
   description: 
   character: {fileID: 3344033746429994667}
@@ -16995,8 +17063,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 76
   indentLevel: 1
-  storyText: "Det \xE4r {b}min mormors mors recept{/b} och har {b}anv\xE4nds{/b}
-    f\xF6r att {b}mata kungar{/b}."
+  storyText: "Det \xE4r {b}{color=red}min mormors mors recept{/color}{/b} och har
+    {b}{color=red}anv\xE4nds{/color}{/b} f\xF6r att {b}{color=red}mata kungar{/color}{/b}."
   description: 
   character: {fileID: 3344033746429994667}
   portrait: {fileID: 21300000, guid: efa812f12ae3f5147a76ecbf7fbe9842, type: 3}
@@ -17023,8 +17091,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 83
   indentLevel: 0
-  storyText: "Jag har {b}bott h\xE4r i 7 \xE5r{/b} nu och trivs v\xE4ldigt bra, du
-    kommer k\xE4nna dig som hemma n\xE4r som helst. "
+  storyText: "Jag har {b}{color=red}bott h\xE4r i 7 \xE5r{/color}{/b} nu och trivs
+    v\xE4ldigt bra, du kommer k\xE4nna dig som hemma n\xE4r som helst. "
   description: 
   character: {fileID: 3344033746429994667}
   portrait: {fileID: 21300000, guid: efa812f12ae3f5147a76ecbf7fbe9842, type: 3}
@@ -17051,7 +17119,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 86
   indentLevel: 1
-  storyText: "\rDet {b}betyder{/b} att du har {b}bra smak{/b}!\r\n"
+  storyText: "\rDet {b}{color=red}betyder{/color}{/b} att du har {b}{color=red}bra
+    smak{/color}{/b}!\r\n"
   description: 
   character: {fileID: 3344033746429994667}
   portrait: {fileID: 21300000, guid: efa812f12ae3f5147a76ecbf7fbe9842, type: 3}
@@ -17105,7 +17174,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 84
   indentLevel: 1
-  storyText: "\rOm jag v\xE4xte blommor skulle jag ge dig en {b}dahlia{/b}. \r\n"
+  storyText: "\rOm jag v\xE4xte blommor skulle jag ge dig en {b}{color=red}dahlia{/color}{/b}.
+    \r\n"
   description: 
   character: {fileID: 3344033746429994667}
   portrait: {fileID: 21300000, guid: efa812f12ae3f5147a76ecbf7fbe9842, type: 3}
@@ -17132,7 +17202,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 90
   indentLevel: 1
-  storyText: "{b}Jag har sparat varje blomma{/b} Herr. R\xF6d Panda har gett mig.\r\n\n"
+  storyText: "{b}{color=red}Jag har sparat varje blomma{/color}{/b} Herr. R\xF6d
+    Panda har gett mig.\r\n\n"
   description: 
   character: {fileID: 3344033746429994667}
   portrait: {fileID: 21300000, guid: efa812f12ae3f5147a76ecbf7fbe9842, type: 3}
@@ -17186,7 +17257,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 88
   indentLevel: 1
-  storyText: "S\xE5 det passar {b}perfekt{/b} f\xF6r att {b}fira min f\xF6delsedag{/b}.\r\n"
+  storyText: "S\xE5 det passar {b}{color=red}perfekt{/color}{/b} f\xF6r att {b}{color=red}fira
+    min f\xF6delsedag{/color}{/b}.\r\n"
   description: 
   character: {fileID: 3344033746429994667}
   portrait: {fileID: 21300000, guid: efa812f12ae3f5147a76ecbf7fbe9842, type: 3}
@@ -17213,7 +17285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 87
   indentLevel: 1
-  storyText: "Jag ska placera den p\xE5 {b}min t\xE5rta{/b}."
+  storyText: "Jag ska placera den p\xE5 {b}{color=red}min t\xE5rta{/color}{/b}."
   description: 
   character: {fileID: 3344033746429994667}
   portrait: {fileID: 21300000, guid: efa812f12ae3f5147a76ecbf7fbe9842, type: 3}
@@ -18454,7 +18526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -353.36438
+    x: -354.50073
     y: -461.62537
     width: 95.454544
     height: 40
@@ -22295,7 +22367,7 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 4524054378375192365}
+  - {fileID: 1671184782182360676}
   selectedCommands: []
   variables:
   - {fileID: 9020234520736726907}
@@ -22447,7 +22519,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 39
   indentLevel: 1
-  storyText: "{b}Bin gillar den bl\xE5 f\xE4rgen{/b}. Hihi nu vet du det ocks\xE5!\r\n\n"
+  storyText: "{b}{color=red}Bin gillar den bl\xE5 f\xE4rgen{/color}{/b}. Hihi nu
+    vet du det ocks\xE5!\r\n\n"
   description: 
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
@@ -22474,8 +22547,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 38
   indentLevel: 1
-  storyText: "Hon f\xE5r n\xE4mligen {b}inga bin som pollinerar{/b} sina blommor,
-    s\xE5 jag ber\xE4ttade f\xF6r henne att hon borde {b}plantera lavendel{/b}."
+  storyText: "Hon f\xE5r n\xE4mligen {b}{color=red}inga bin som pollinerar{/color}{/b}
+    sina blommor, s\xE5 jag ber\xE4ttade f\xF6r henne att hon borde {b}{color=red}plantera
+    lavendel{/color}{/b}."
   description: 
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
@@ -22529,7 +22603,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 36
   indentLevel: 1
-  storyText: "Visste du att {b}alla arbetsbin \xE4r kvinnor{/b}, NU SNACKAR VI GIRLPOWER!\r\n"
+  storyText: "Visste du att {b}{color=red}alla arbetsbin \xE4r kvinnor{/color}{/b},
+    NU SNACKAR VI GIRLPOWER!\r\n"
   description: 
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
@@ -22611,8 +22686,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 43
   indentLevel: 1
-  storyText: "Jag l\xE4ste h\xE4r om dagen att efter att {b}bin parar sig i luften{/b},
-    efter\xE5t f\xF6rlorar {b}manbiet{/b} sina {b}reproduktionsorgan{/b}. "
+  storyText: "Jag l\xE4ste h\xE4r om dagen att efter att {b}{color=red}bin parar
+    sig i luften{/color}{/b}, efter\xE5t f\xF6rlorar {b}{color=red}manbiet{/color}{/b}
+    sina {b}{color=red}reproduktionsorgan{/color}{/b}. "
   description: 
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
@@ -25204,7 +25280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 73
   indentLevel: 0
-  storyText: "{b}Hoppas vi kan bli bra v\xE4nner!{/b}\r\n"
+  storyText: "{b}{color=red}Hoppas vi kan bli bra v\xE4nner!{/color}{/b}\r\n"
   description: 
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
@@ -25258,8 +25334,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 71
   indentLevel: 0
-  storyText: "Ledsen v\xE4nnen men jag har redan {b}en \xE4lskare i Somalia{/b} .
-    Hahaha!"
+  storyText: "Ledsen v\xE4nnen men jag har redan {b}{color=red}en \xE4lskare i Somalia{/color}{/b}
+    . Hahaha!"
   description: 
   character: {fileID: 6689115501710099173}
   portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
@@ -26470,8 +26546,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 66
   indentLevel: 1
-  storyText: "Du {b}p\xE5minner{/b} mig om en {b}k\xE4r gammal v\xE4n{/b} som jag
-    f\xF6rlorat, han gav mig alltid blommor i tuffa tider. \r\n"
+  storyText: "Du {b}{color=red}p\xE5minner{/color}{/b} mig om en {b}{color=red}k\xE4r
+    gammal v\xE4n{/color}{/b} som jag f\xF6rlorat, han gav mig alltid blommor i tuffa
+    tider. \r\n"
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
@@ -26994,7 +27071,7 @@ MonoBehaviour:
   itemId: 58
   indentLevel: 1
   storyText: "En s\xE5n h\xE4r fin blomma har jag inte sk\xE5dat sedan det hemska
-    {b}slaget vid Vedeboda{/b}\u2026 \n\n"
+    {b}{color=red}slaget vid Vedeboda{/color}{/b}\u2026 \n\n"
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
@@ -27491,8 +27568,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 51
   indentLevel: 1
-  storyText: "De {b}andra h\xE5ller avst\xE5nd{/b} eftersom de tycker att jag \xE4r
-    {b}otrevlig{/b} och inte vill ha med n\xE5gon att g\xF6ra. \r\n\n"
+  storyText: "De {b}{color=red}andra h\xE5ller avst\xE5nd{/color}{/b} eftersom de
+    tycker att jag \xE4r {b}{color=red}otrevlig{/color}{/b} och inte vill ha med
+    n\xE5gon att g\xF6ra. \r\n\n"
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
@@ -27789,7 +27867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -162.93102
+    x: -164.15053
     y: -159.19827
     width: 135.36584
     height: 40
@@ -30578,8 +30656,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 83
   indentLevel: 1
-  storyText: "Ingen har gett mig n\xE5got fint sedan jag {b}\xE5terv\xE4nde till
-    byn{/b}\u2026 \r\n\t\n"
+  storyText: "Ingen har gett mig n\xE5got fint sedan jag {b}{color=red}\xE5terv\xE4nde
+    till byn{/color}{/b}\u2026 \r\n\t\n"
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
@@ -30606,8 +30684,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 86
   indentLevel: 0
-  storyText: "\xC4r det inte lite fr\xE4ckt att st\xF6ra en {b}gammal gubbe{/b} p\xE5
-    detta viset?\r\r\n"
+  storyText: "\xC4r det inte lite fr\xE4ckt att st\xF6ra en {b}{color=red}gammal
+    gubbe{/color}{/b} p\xE5 detta viset?\r\r\n"
   description: 
   character: {fileID: 1017009080}
   portrait: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
