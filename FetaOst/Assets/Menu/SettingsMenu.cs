@@ -10,6 +10,7 @@ public class SettingsMenu : MonoBehaviour
 {
 
     public AudioMixer audioMixer;
+    public Slider volumeSlider;
 
     public Dropdown resolutionDropDown;
 
@@ -23,10 +24,8 @@ public class SettingsMenu : MonoBehaviour
 
     void Start()
     {
-        audioMixer = GlobalOptionsControl.Instance.audioMixer;
-        resolutionDropDown.value = GlobalOptionsControl.Instance.resolutionDropDown;
-        GraphicsDropDown.value = GlobalOptionsControl.Instance.GraphicsDropDown;
-
+        SetVolume(GlobalOptionsControl.Instance.volume);
+       
        resolutions = Screen.resolutions;
 
         resolutionDropDown.ClearOptions();
@@ -51,10 +50,7 @@ public class SettingsMenu : MonoBehaviour
         
 
     }
-    private void Update()
-    {
-        SaveData();
-    }
+  
     public void SetResolution (int resolutionIndex)
     {
         Resolution resolution = resolutions[resolutionIndex];
@@ -66,6 +62,9 @@ public class SettingsMenu : MonoBehaviour
     {
        
         audioMixer.SetFloat("volume", volume);
+        volumeSlider.value = volume;
+        GlobalOptionsControl.Instance.volume = volume;
+        Debug.Log(volume);
     }
 
     public void SetQuality (int qualityIndex)
@@ -78,10 +77,5 @@ public class SettingsMenu : MonoBehaviour
         Screen.fullScreen = isFullscreen;
     }
     
-    private void SaveData()
-    {
-        GlobalOptionsControl.Instance.audioMixer = audioMixer;
-        GlobalOptionsControl.Instance.resolutionDropDown = resolutionDropDown.value;
-        GlobalOptionsControl.Instance.GraphicsDropDown = GraphicsDropDown.value;      
-}
+   
 }

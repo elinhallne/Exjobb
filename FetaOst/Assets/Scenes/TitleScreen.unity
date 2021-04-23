@@ -726,9 +726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counter: 0
-  audioMixer: {fileID: 0}
-  resolutionDropDown: 0
-  GraphicsDropDown: 0
+  volume: 0
 --- !u!4 &908261004
 Transform:
   m_ObjectHideFlags: 0
@@ -1884,36 +1882,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Options
-      objectReference: {fileID: 0}
-    - target: {fileID: 570034084727224295, guid: 0c267f151e424d340ad3aaeba3b02f50,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3873357866316134015, guid: 0c267f151e424d340ad3aaeba3b02f50,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3873357866316134015, guid: 0c267f151e424d340ad3aaeba3b02f50,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3873357866316134015, guid: 0c267f151e424d340ad3aaeba3b02f50,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3873357866994902394, guid: 0c267f151e424d340ad3aaeba3b02f50,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3873357866994902394, guid: 0c267f151e424d340ad3aaeba3b02f50,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c267f151e424d340ad3aaeba3b02f50, type: 3}

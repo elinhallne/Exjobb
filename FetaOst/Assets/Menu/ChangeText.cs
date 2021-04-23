@@ -28,9 +28,12 @@ public class ChangeText : MonoBehaviour
     {
         counter = GlobalOptionsControl.Instance.counter;
         myDropdown = GetComponent<Dropdown>();
+       
 
 
         texts = Resources.FindObjectsOfTypeAll<Text>();
+
+        UpdateText();
         //myRectTransform = GetComponent<RectTransform>();
 
 

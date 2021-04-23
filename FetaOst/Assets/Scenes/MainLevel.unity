@@ -3315,19 +3315,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 7121.918, y: -8995.947}
+  scrollPos: {x: 5911.2583, y: -10000.4}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 201
-  zoom: 0.25
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 0
     height: 0
-  selectedBlocks:
-  - {fileID: 596701591}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 596701567}
@@ -3390,7 +3389,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5718.8193
     y: 10209.695
-    width: 74
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3469,7 +3468,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5599.254
     y: 10296.767
-    width: 114
+    width: 67
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3573,7 +3572,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5900.1743
     y: 10202.917
-    width: 122
+    width: 76
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3623,7 +3622,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5599.8716
     y: 10115.105
-    width: 110
+    width: 62
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4387,7 +4386,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5402.983
     y: 10207.032
-    width: 142
+    width: 92
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4449,7 +4448,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -5596.4688
     y: 10210.187
-    width: 102
+    width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5243,7 +5242,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &687385816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7524,9 +7523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counter: 0
-  audioMixer: {fileID: 0}
-  resolutionDropDown: 0
-  GraphicsDropDown: 0
+  volume: 0
 --- !u!4 &1175846216
 Transform:
   m_ObjectHideFlags: 0
@@ -11919,6 +11916,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Options
+      objectReference: {fileID: 0}
+    - target: {fileID: 570034084727224295, guid: 0c267f151e424d340ad3aaeba3b02f50,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873357866316134015, guid: 0c267f151e424d340ad3aaeba3b02f50,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873357866316134015, guid: 0c267f151e424d340ad3aaeba3b02f50,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873357866316134015, guid: 0c267f151e424d340ad3aaeba3b02f50,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873357866994902394, guid: 0c267f151e424d340ad3aaeba3b02f50,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3873357866994902394, guid: 0c267f151e424d340ad3aaeba3b02f50,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c267f151e424d340ad3aaeba3b02f50, type: 3}

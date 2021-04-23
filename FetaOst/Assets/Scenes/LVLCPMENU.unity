@@ -3523,8 +3523,6 @@ MonoBehaviour:
   - {fileID: 12800000, guid: 4d1cf7236ffa16542ae9099def3bc298, type: 3}
   - {fileID: 12800000, guid: 4ea935dc3201e1e4898e5c99d5279899, type: 3}
   - {fileID: 12800000, guid: 41f3cf454c4be22458f80042f5dba051, type: 3}
-  fonts: {fileID: 0}
-  button: {fileID: 0}
   myDropdown: {fileID: 0}
 --- !u!114 &1033090467
 MonoBehaviour:
