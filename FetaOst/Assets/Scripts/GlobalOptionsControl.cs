@@ -12,9 +12,8 @@ public class GlobalOptionsControl : MonoBehaviour
     public int counter;
     
     //från MenySettings
-    public AudioMixer audioMixer;
-    public int resolutionDropDown;
-    public int GraphicsDropDown;
+    public float volume;
+    
 
     void Awake()
     {
