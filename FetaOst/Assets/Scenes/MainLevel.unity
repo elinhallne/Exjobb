@@ -3326,8 +3326,10 @@ MonoBehaviour:
     y: 0
     width: 0
     height: 0
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 596701594}
+  selectedCommands:
+  - {fileID: 596701606}
   variables:
   - {fileID: 596701567}
   - {fileID: 596701570}
@@ -7523,6 +7525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counter: 0
+  textColourCount: 0
   volume: 0
 --- !u!4 &1175846216
 Transform:
@@ -8669,15 +8672,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1847772906}
     m_Modifications:
+    - target: {fileID: 745054406955524532, guid: f273949f5e884fc498d895393e7d664d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Say Dialog
+      objectReference: {fileID: 0}
     - target: {fileID: 4718934882889375472, guid: f273949f5e884fc498d895393e7d664d,
         type: 3}
       propertyPath: m_Name
-      value: SayDialog
+      value: TheSayDialog
       objectReference: {fileID: 0}
     - target: {fileID: 4718934882889375472, guid: f273949f5e884fc498d895393e7d664d,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718934882889375472, guid: f273949f5e884fc498d895393e7d664d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7378434622752869990, guid: f273949f5e884fc498d895393e7d664d,
         type: 3}
@@ -8783,6 +8796,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8274479324319084420, guid: f273949f5e884fc498d895393e7d664d,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 0ba74c96d554c264a91b5095b7193b5b,
+        type: 2}
+    - target: {fileID: 8448177718820127280, guid: f273949f5e884fc498d895393e7d664d,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8448177718820127280, guid: f273949f5e884fc498d895393e7d664d,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8448177718820127280, guid: f273949f5e884fc498d895393e7d664d,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f273949f5e884fc498d895393e7d664d, type: 3}
@@ -14114,7 +14148,8 @@ AudioSource:
   m_GameObject: {fileID: 3551840876717340224}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 0ba74c96d554c264a91b5095b7193b5b,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -19755,8 +19790,8 @@ GameObject:
   - component: {fileID: 7609588239141928912}
   - component: {fileID: 208134431464654644}
   m_Layer: 5
-  m_Name: SayDialogIntroduktion
-  m_TagString: Untagged
+  m_Name: 'TheSayDialog '
+  m_TagString: Say Dialog
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25840,8 +25875,9 @@ MonoBehaviour:
     width: 0
     height: 0
   selectedBlocks:
-  - {fileID: 8426445694177618021}
-  selectedCommands: []
+  - {fileID: 8426445694177618002}
+  selectedCommands:
+  - {fileID: 8426445694177618000}
   variables:
   - {fileID: 8426445694177617983}
   description: 
@@ -25990,7 +26026,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -161.6695
     y: 50.84749
-    width: 142.6829
+    width: 102.68291
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -26447,7 +26483,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -163.10858
     y: 1.712204
-    width: 135.36584
+    width: 95.36584
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -26941,9 +26977,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -156.76373
-    y: -47.576447
-    width: 136.58536
+    x: -159.20276
+    y: -45.13742
+    width: 96.58535
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -27439,7 +27475,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -163.83391
     y: -95.36854
-    width: 136.58536
+    width: 96.58535
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -27965,7 +28001,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -164.15053
     y: -159.19827
-    width: 135.36584
+    width: 95.36584
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -28480,7 +28516,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -164.06738
     y: -211.60736
-    width: 134.14633
+    width: 94.146324
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -28748,7 +28784,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -173.74564
     y: -269.47723
-    width: 162.1951
+    width: 122.1951
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -30657,7 +30693,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -395.0124
     y: -105.53516
-    width: 179.26826
+    width: 139.26826
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -30957,7 +30993,7 @@ GameObject:
   - component: {fileID: 4683959001618931762}
   m_Layer: 5
   m_Name: Panel
-  m_TagString: Untagged
+  m_TagString: Say Dialog
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
