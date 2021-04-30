@@ -25,8 +25,8 @@ public class ChangeTextColour : MonoBehaviour
         //AddGOToList();
        
 
-        textColourCount = GlobalOptionsControl.Instance.textColourCount;
-        currentColour = GlobalOptionsControl.Instance.currentColour;
+        //textColourCount = GlobalOptionsControl.Instance.textColourCount;
+        //currentColour = GlobalOptionsControl.Instance.currentColour;
 
         textsInGame = Resources.FindObjectsOfTypeAll<Text>();
         myDropDown = GetComponent<TMP_Dropdown>();
@@ -64,7 +64,7 @@ public class ChangeTextColour : MonoBehaviour
         {
             MyDropDownValueChangedHappened(myDropDown);
             UpdateTextColour();
-            SaveData();
+            //SaveData();
 
         });
     }
@@ -110,14 +110,14 @@ public class ChangeTextColour : MonoBehaviour
             image.color = backrundColur.color;
         }
 
-    }*/
+    }
     public void SaveData()
     {
         GlobalOptionsControl.Instance.textColourCount = textColourCount;
         GlobalOptionsControl.Instance.currentColour = currentColour;
     }
 
-    /*private void AddGOToList()
+    private void AddGOToList()
     {
         GameObject[] toAdd;
         toAdd = GameObject.FindGameObjectsWithTag("MenyText");

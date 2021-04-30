@@ -1270,7 +1270,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 116, y: -163}
+  m_AnchoredPosition: {x: 116, y: -99}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6813950481895154369
@@ -1598,7 +1598,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 101.9, y: -116}
+  m_AnchoredPosition: {x: 101.9, y: -52.000004}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2675228828418422155
@@ -3215,7 +3215,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 111, y: -9}
+  m_AnchoredPosition: {x: 111, y: 54.999996}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3873357866068840083
@@ -3767,7 +3767,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 166, y: -192}
+  m_AnchoredPosition: {x: 160, y: -175}
   m_SizeDelta: {x: 88.1, y: 58.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3873357867198346314
@@ -4484,7 +4484,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1, y: -60.40001}
+  m_AnchoredPosition: {x: 1, y: 3.599987}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3873357867745759510
@@ -4582,7 +4582,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -119, y: -13.0000305}
+  m_AnchoredPosition: {x: -119, y: 50.999966}
   m_SizeDelta: {x: -280.2, y: -403.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3873357867953131341
@@ -5184,7 +5184,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7030031356363664390
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5307,16 +5307,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5182944175266791237}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5183bf6ce2c50264db40f0593430febb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myDropDown: {fileID: 6540613815179003991}
-  options:
-  - {fileID: 997692305781437492, guid: a2c9ce6da3839ba4fa524278f4148fd1, type: 3}
-  - {fileID: 3531998995896030051, guid: d0ed4e41ae5d615409b891ceb70dfc08, type: 3}
-  - {fileID: 5656330130174574653, guid: c8d612b2c6e02dc4fb4cb7b6a1fd05bb, type: 3}
 --- !u!1 &5378851024999975083
 GameObject:
   m_ObjectHideFlags: 0
@@ -6174,7 +6170,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3365823167768741124
 RectTransform:
   m_ObjectHideFlags: 0
