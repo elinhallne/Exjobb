@@ -31,13 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        
-        if (other.gameObject.CompareTag("No Walkning"))
-        {
-            Debug.Log("Hit Happened");
-            
-        }
-
+      
     }
    
 }
