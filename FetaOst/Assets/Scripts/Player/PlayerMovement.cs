@@ -28,4 +28,16 @@ public class PlayerMovement : MonoBehaviour
         rb2d.MovePosition(rb2d.position + movement * speed * Time.fixedDeltaTime);
 
     }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        
+        if (other.gameObject.CompareTag("No Walkning"))
+        {
+            Debug.Log("Hit Happened");
+            
+        }
+
+    }
+   
 }
