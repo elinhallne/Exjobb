@@ -488,7 +488,7 @@ GameObject:
   - component: {fileID: 1850163733618988896}
   - component: {fileID: 8274479324319084420}
   m_Layer: 5
-  m_Name: SayDialog
+  m_Name: TheSayDialog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
