@@ -15,9 +15,9 @@ public class SettingsMenu : MonoBehaviour
 
     public TMP_Dropdown resolutionDropDown;
 
-    public Dropdown GraphicsDropDown;
+    public TMP_Dropdown GraphicsDropDown;
 
-    //public TMP_Dropdown resDropDown;
+    
 
     Resolution[] resolutions;
 

@@ -15,10 +15,9 @@ public class ChangeTextColour : MonoBehaviour
     //private List<GameObject> goWithTag;
 
     private int textColourCount = 0;
+    private Color currentColour = Color.white;
 
-    [SerializeField]
-    private GameObject[] options;
-
+   
     void Start()
     {
         //goWithTag = new List<GameObject>();
@@ -27,6 +26,7 @@ public class ChangeTextColour : MonoBehaviour
        
 
         textColourCount = GlobalOptionsControl.Instance.textColourCount;
+        currentColour = GlobalOptionsControl.Instance.currentColour;
 
         textsInGame = Resources.FindObjectsOfTypeAll<Text>();
         myDropDown = GetComponent<TMP_Dropdown>();
@@ -58,12 +58,14 @@ public class ChangeTextColour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateTextColour();
+        
+
         myDropDown.onValueChanged.AddListener(delegate
         {
             MyDropDownValueChangedHappened(myDropDown);
             UpdateTextColour();
             SaveData();
+
         });
     }
     public void MyDropDownValueChangedHappened(TMP_Dropdown sender)
@@ -73,14 +75,17 @@ public class ChangeTextColour : MonoBehaviour
         {
             case 0:
                 textColourCount = 0;
+                currentColour = Color.white;
 
                 break;
             case 1:
                 textColourCount = 1;
+                currentColour = Color.blue;
 
                 break;
             case 2:
                 textColourCount = 2;
+                currentColour = Color.yellow;
 
                 break;
         }
@@ -88,15 +93,14 @@ public class ChangeTextColour : MonoBehaviour
 
     private void UpdateTextColour()
     {
-        Text theTextObjcet = options[textColourCount].GetComponent<Text>();
-        
+               
         foreach(Text text in textsInGame)
         {
-            text.color = theTextObjcet.color;
+            text.color = currentColour;
         }
     }
 
-    private void UpdateBakrundColour()
+   /* private void UpdateBakrundColour()
     {
         Image backrundColur = options[textColourCount].GetComponentInChildren<Image>();
 
@@ -106,10 +110,11 @@ public class ChangeTextColour : MonoBehaviour
             image.color = backrundColur.color;
         }
 
-    }
+    }*/
     public void SaveData()
     {
         GlobalOptionsControl.Instance.textColourCount = textColourCount;
+        GlobalOptionsControl.Instance.currentColour = currentColour;
     }
 
     /*private void AddGOToList()
