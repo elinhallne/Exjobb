@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ChangeTextColour : MonoBehaviour
 {
     private Text[] textsInGame;
     private GameObject[] bakrundInGame;
-    private Dropdown myDropDown;
+    [SerializeField]
+    private TMP_Dropdown myDropDown;
 
-    private List<GameObject> goWithTag;
+    //private List<GameObject> goWithTag;
 
     private int textColourCount = 0;
 
@@ -19,21 +21,22 @@ public class ChangeTextColour : MonoBehaviour
 
     void Start()
     {
-        goWithTag = new List<GameObject>();
+        //goWithTag = new List<GameObject>();
 
-        AddGOToList();
+        //AddGOToList();
        
 
         textColourCount = GlobalOptionsControl.Instance.textColourCount;
 
         textsInGame = Resources.FindObjectsOfTypeAll<Text>();
-        myDropDown  = GetComponent<Dropdown>();
+        myDropDown = GetComponent<TMP_Dropdown>();
 
-        bakrundInGame = GameObject.FindGameObjectsWithTag("Say Dialog");
-        UpdateBakrundColour();
+
+        /*bakrundInGame = GameObject.FindGameObjectsWithTag("Say Dialog");
+        UpdateBakrundColour();*/
         UpdateTextColour();
 
-        foreach (Text text in textsInGame)
+        /*foreach (Text text in textsInGame)
         {
             int i = 0;
             Text goTextComp = goWithTag[i].GetComponent<Text>();
@@ -43,7 +46,7 @@ public class ChangeTextColour : MonoBehaviour
 
             }
             i++;
-        }
+        }*/
 
 
 
@@ -55,15 +58,15 @@ public class ChangeTextColour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        UpdateTextColour();
         myDropDown.onValueChanged.AddListener(delegate
         {
             MyDropDownValueChangedHappened(myDropDown);
             UpdateTextColour();
-            UpdateBakrundColour();
             SaveData();
         });
     }
-    public void MyDropDownValueChangedHappened(Dropdown sender)
+    public void MyDropDownValueChangedHappened(TMP_Dropdown sender)
     {
         Debug.Log("You have selected this: " + sender.value);
         switch (sender.value)
@@ -109,12 +112,12 @@ public class ChangeTextColour : MonoBehaviour
         GlobalOptionsControl.Instance.textColourCount = textColourCount;
     }
 
-    private void AddGOToList()
+    /*private void AddGOToList()
     {
         GameObject[] toAdd;
         toAdd = GameObject.FindGameObjectsWithTag("MenyText");
 
         foreach (GameObject gameObject in toAdd)
             goWithTag.Add(gameObject);
-    }
+    }*/
 }

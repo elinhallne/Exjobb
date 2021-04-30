@@ -16,7 +16,7 @@ public class ChangeText : MonoBehaviour
     private int counter = 0;
 
     private int fontSize;
-    public Dropdown myDropdown;
+    public TMP_Dropdown myDropdown;
     private Text[] texts;
     // private TMP_Text[] textPROs;
   
@@ -27,7 +27,7 @@ public class ChangeText : MonoBehaviour
     private void Start()
     {
         counter = GlobalOptionsControl.Instance.counter;
-        myDropdown = GetComponent<Dropdown>();
+        myDropdown = GetComponent<TMP_Dropdown>();
        
 
 
@@ -59,7 +59,7 @@ public class ChangeText : MonoBehaviour
     }
     //1500 x335
 
-    public void myDropDownValueChangedHappened(Dropdown sender)
+    public void myDropDownValueChangedHappened(TMP_Dropdown sender)
     {
         Debug.Log("You have selected this: " + sender.value);
         switch(sender.value)
