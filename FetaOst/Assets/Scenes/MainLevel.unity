@@ -359,7 +359,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72093974}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.39, y: 0.1, z: 16.22}
+  m_LocalPosition: {x: -2.39, y: 0.1, z: 14.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1722430634}
@@ -381,7 +381,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &72093977
 BoxCollider:
@@ -1093,10 +1093,10 @@ GameObject:
   - component: {fileID: 344214720}
   m_Layer: 0
   m_Name: hus2
-  m_TagString: Untagged
+  m_TagString: No Walkning
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &344214718
 Transform:
@@ -1150,7 +1150,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: e1297b2b3618fae4f8e199eccb6e7d7a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1173,8 +1173,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.140238, y: 5.688234, z: 0.20000005}
-  m_Center: {x: 0.3935213, y: -0.28990507, z: -5.67086e-16}
+  m_Size: {x: 6.981907, y: 3.7622137, z: 9.999998}
+  m_Center: {x: -0.07061005, y: -1.2529154, z: -3.594147e-15}
 --- !u!1 &361087120
 GameObject:
   m_ObjectHideFlags: 0
@@ -4129,10 +4129,10 @@ GameObject:
   - component: {fileID: 743981417}
   m_Layer: 0
   m_Name: exjobb_hus
-  m_TagString: Untagged
+  m_TagString: No Walkning
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &743981415
 Transform:
@@ -4186,7 +4186,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: ce1033825520e4b44acf670590d08f63, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4209,8 +4209,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.3512955, y: 7.2495947, z: 0.20000005}
-  m_Center: {x: 0.16147041, y: 0.71383905, z: 3.0388374e-15}
+  m_Size: {x: 7.3512955, y: 2.394408, z: 9.999998}
+  m_Center: {x: 0.16147041, y: -2.1065428, z: -1.5140714e-15}
 --- !u!1 &744779299
 GameObject:
   m_ObjectHideFlags: 0
@@ -4918,10 +4918,10 @@ GameObject:
   - component: {fileID: 1104600794}
   m_Layer: 0
   m_Name: hus3
-  m_TagString: Untagged
+  m_TagString: No Walkning
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1104600792
 Transform:
@@ -4975,7 +4975,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 4208425f6474ef34292c05169ca3e8d6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4998,8 +4998,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.231365, y: 5.3908973, z: 0.20000005}
-  m_Center: {x: -0.07558298, y: -0.034204483, z: -4.1985835e-17}
+  m_Size: {x: 7.231365, y: 3.5021002, z: 9.999998}
+  m_Center: {x: -0.07558298, y: -0.97860324, z: 3.040628e-16}
 --- !u!1 &1111167275
 GameObject:
   m_ObjectHideFlags: 0
@@ -6573,10 +6573,10 @@ GameObject:
   - component: {fileID: 1643382378}
   m_Layer: 0
   m_Name: hus4
-  m_TagString: Untagged
+  m_TagString: No Walkning
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1643382376
 Transform:
@@ -6630,7 +6630,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 20c90544417e4d748af76402a4455818, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6653,8 +6653,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.2941747, y: 4.339216, z: 0.20000005}
-  m_Center: {x: 0.055092096, y: 0.28933275, z: 5.589528e-16}
+  m_Size: {x: 7.2941747, y: 3.8981614, z: 9.999998}
+  m_Center: {x: 0.055092096, y: -1.3618186, z: -0.39864922}
 --- !u!1 &1690874728
 GameObject:
   m_ObjectHideFlags: 0
@@ -8604,7 +8604,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 453834783341194547}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 4.744568, y: 11.140251, z: 0.34841326}
@@ -12684,6 +12684,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'spr_Brunn '
       objectReference: {fileID: 0}
+    - target: {fileID: 1534051547959777438, guid: 90f232ed66127e54a9e5a3903f5f9005,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 6.179024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1534051547959777438, guid: 90f232ed66127e54a9e5a3903f5f9005,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 5.974555
+      objectReference: {fileID: 0}
+    - target: {fileID: 1534051547959777438, guid: 90f232ed66127e54a9e5a3903f5f9005,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -2.7527237
+      objectReference: {fileID: 0}
+    - target: {fileID: 1534051547959777438, guid: 90f232ed66127e54a9e5a3903f5f9005,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 1.0456862e-14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1534051547959777438, guid: 90f232ed66127e54a9e5a3903f5f9005,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1534051547959777439, guid: 90f232ed66127e54a9e5a3903f5f9005,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 1534051547959777440, guid: 90f232ed66127e54a9e5a3903f5f9005,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16232,7 +16262,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8426445693896952189}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 4.744568, y: 11.140251, z: 0.34841326}
@@ -19161,7 +19191,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8426445694177617977}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 4.744568, y: 11.140251, z: 0.34841326}
@@ -19204,7 +19234,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 9
   m_Sprite: {fileID: 21300000, guid: 789a1eaaf5ff69146b21c3d7b29dab28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

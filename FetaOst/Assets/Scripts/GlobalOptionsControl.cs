@@ -10,11 +10,14 @@ public class GlobalOptionsControl : MonoBehaviour
 
     //Från ChangeText
     public int counter;
-    
+   // public int textColourCount;
+   // public Color currentColour;
+
     //från MenySettings
     public float volume;
-    
 
+
+    
     void Awake()
     {
         if (Instance == null)
