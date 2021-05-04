@@ -5713,7 +5713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 596701566}
+  selectedFlowchart: {fileID: 8426445693896952190}
 --- !u!4 &692364516
 Transform:
   m_ObjectHideFlags: 1
@@ -22835,7 +22835,8 @@ MonoBehaviour:
     height: 0
   selectedBlocks:
   - {fileID: 1671184782182360676}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 8426445693896952193}
   variables:
   - {fileID: 9020234520736726907}
   description: 
@@ -22916,7 +22917,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 279941034}
 --- !u!114 &8426445693896952194
 MonoBehaviour:
   m_ObjectHideFlags: 2
