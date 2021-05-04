@@ -22908,7 +22908,7 @@ MonoBehaviour:
   storyText: "Hej s\xF6tnos! Har jag ber\xE4ttat om min \xE4lskare i Somalia!"
   description: 
   character: {fileID: 6689115501710099173}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 99c29863ea163bb45a9d4c5323a27086, type: 3}
   voiceOverClip: {fileID: 8300000, guid: 0840c938d50fef64aad6b742673c90a1, type: 3}
   showAlways: 1
   showCount: 1
@@ -22917,7 +22917,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 279941034}
+  setSayDialog: {fileID: 0}
 --- !u!114 &8426445693896952194
 MonoBehaviour:
   m_ObjectHideFlags: 2
