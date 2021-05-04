@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
     public Character chr_Noir;
 
     [SerializeField]
+    private GameObject inGameMeny;
+
+    [SerializeField]
     private PlantControler plantControler;
 
     
@@ -52,6 +55,18 @@ public class GameManager : MonoBehaviour
         UpdateFungusVariabels();
         CheatCodes();
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!inGameMeny.activeInHierarchy)
+            {
+                inGameMeny.SetActive(true);
+            }
+            else
+            {
+                inGameMeny.SetActive(false);
+            }
+        }
+
     }
 
     private void UpdateFungusVariabels()
@@ -70,7 +85,18 @@ public class GameManager : MonoBehaviour
                 Debug.Log("Reset Scene");
                 SceneManager.LoadScene(1);
                 break;
+            case "escape":
+                if (!inGameMeny.activeInHierarchy)
+                {
+                    inGameMeny.SetActive(true);
+                }
+                else
+                {
+                    inGameMeny.SetActive(false);
+                }
+                break;
             case "å":
+                Application.Quit();
                 break;
 
 

@@ -3654,6 +3654,7 @@ MonoBehaviour:
     loveMeter: {fileID: 2139001764737992645}
     loveMeterValue: 0
     journal: {fileID: 527328510}
+  inGameMeny: {fileID: 1348349785}
   plantControler: {fileID: 406846301}
 --- !u!114 &596701566
 MonoBehaviour:
@@ -5597,7 +5598,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &687385816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5713,7 +5714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 8426445693896952190}
+  selectedFlowchart: {fileID: 596701566}
 --- !u!4 &692364516
 Transform:
   m_ObjectHideFlags: 1
