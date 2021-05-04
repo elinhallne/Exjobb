@@ -4009,7 +4009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 8426445694177617978}
+  selectedFlowchart: {fileID: 8426445693896952190}
 --- !u!4 &692364516
 Transform:
   m_ObjectHideFlags: 1
@@ -12812,7 +12812,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -347.9665
     y: -195.17052
-    width: 60.000008
+    width: 101
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12895,7 +12895,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -347.50726
     y: -408.62537
-    width: 60
+    width: 96
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14209,7 +14209,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -349.40558
     y: -244.3058
-    width: 60
+    width: 96
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -14818,7 +14818,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -358.82312
     y: -514.12537
-    width: 79.696976
+    width: 121
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15157,7 +15157,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -348.19058
     y: -293.59442
-    width: 60
+    width: 97
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15286,7 +15286,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -350.36438
     y: -457.62537
-    width: 60
+    width: 95
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16147,7 +16147,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -581.3094
     y: -351.55316
-    width: 97.8788
+    width: 140
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -16362,18 +16362,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 608.78827, y: 592.5303}
+  scrollPos: {x: 567.3983, y: 418.17053}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 206
-  zoom: 0.8799999
+  zoom: 1
   scrollViewRect:
     serializedVersion: 2
     x: 0
     y: 0
     width: 0
     height: 0
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 4524054378375192365}
   selectedCommands: []
   variables:
   - {fileID: 9020234520736726907}
@@ -16455,7 +16456,7 @@ MonoBehaviour:
   waitForClick: 1
   stopVoiceover: 1
   waitForVO: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 279941034}
 --- !u!114 &8426445693896952194
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -24544,7 +24545,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -350.36438
     y: -339.31616
-    width: 60
+    width: 97
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
