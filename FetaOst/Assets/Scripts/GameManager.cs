@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private PlantControler plantControler;
 
+    [SerializeField] private GameObject inGameMeny;
+
     
 
     // Start is called before the first frame update
@@ -52,6 +54,18 @@ public class GameManager : MonoBehaviour
         UpdateFungusVariabels();
         CheatCodes();
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (!inGameMeny.activeInHierarchy)
+            {
+                inGameMeny.SetActive(true);
+            }
+            else
+            {
+                inGameMeny.SetActive(false);
+            }
+        }
+
     }
 
     private void UpdateFungusVariabels()
@@ -71,6 +85,7 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene(1);
                 break;
             case "å":
+                Application.Quit();
                 break;
 
 

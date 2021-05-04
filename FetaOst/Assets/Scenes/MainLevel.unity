@@ -2084,6 +2084,7 @@ MonoBehaviour:
     loveMeter: {fileID: 2139001764737992645}
     loveMeterValue: 0
   plantControler: {fileID: 406846301}
+  inGameMeny: {fileID: 1348349785}
 --- !u!114 &596701566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4009,7 +4010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 8426445693896952190}
+  selectedFlowchart: {fileID: 596701566}
 --- !u!4 &692364516
 Transform:
   m_ObjectHideFlags: 1
@@ -6155,9 +6156,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'How to Play
-
-'
+  m_text: "Spelinst\xE4llningar\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
