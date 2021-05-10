@@ -2823,7 +2823,7 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Std Dys
       m_Image: {fileID: 0}
-    - m_Text: Bold Dys
+    - m_Text: Comic Sans
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2843,7 +2843,7 @@ MonoBehaviour:
   myFonts:
   - {fileID: 12800000, guid: bb145366ce7024469a5758b08d31802c, type: 3}
   - {fileID: 12800000, guid: 2f747b8695b86394e878579e3652ddf4, type: 3}
-  - {fileID: 12800000, guid: 4ea935dc3201e1e4898e5c99d5279899, type: 3}
+  - {fileID: 12800000, guid: 0bde9f003b3ad0b468a6f878f4816d1c, type: 3}
   myDropdown: {fileID: 8291238746460910551}
 --- !u!1 &3806935629648994179
 GameObject:

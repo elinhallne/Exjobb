@@ -9159,25 +9159,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1847772906}
     m_Modifications:
-    - target: {fileID: 745054406955524532, guid: f273949f5e884fc498d895393e7d664d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Say Dialog
-      objectReference: {fileID: 0}
     - target: {fileID: 4718934882889375472, guid: f273949f5e884fc498d895393e7d664d,
         type: 3}
       propertyPath: m_Name
       value: TheSayDialog
-      objectReference: {fileID: 0}
-    - target: {fileID: 4718934882889375472, guid: f273949f5e884fc498d895393e7d664d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4718934882889375472, guid: f273949f5e884fc498d895393e7d664d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7378434622752869990, guid: f273949f5e884fc498d895393e7d664d,
         type: 3}
@@ -9283,27 +9268,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8274479324319084420, guid: f273949f5e884fc498d895393e7d664d,
-        type: 3}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 24300002, guid: 0ba74c96d554c264a91b5095b7193b5b,
-        type: 2}
-    - target: {fileID: 8448177718820127280, guid: f273949f5e884fc498d895393e7d664d,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8448177718820127280, guid: f273949f5e884fc498d895393e7d664d,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8448177718820127280, guid: f273949f5e884fc498d895393e7d664d,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f273949f5e884fc498d895393e7d664d, type: 3}
@@ -20570,7 +20534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTextObject: {fileID: 642898861809449805}
   punchObject: {fileID: 8818432051193350404}
-  writingSpeed: 60
+  writingSpeed: 15
   punctuationPause: 0.25
   hiddenTextColor: {r: 1, g: 1, b: 1, a: 0}
   writeWholeWords: 0

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3546419601273096322}
   m_Layer: 5
   m_Name: Panel
-  m_TagString: Untagged
+  m_TagString: Say Dialog
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -625,7 +625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTextObject: {fileID: 8708733699111736317}
   punchObject: {fileID: 745054406955524532}
-  writingSpeed: 60
+  writingSpeed: 20
   punctuationPause: 0.25
   hiddenTextColor: {r: 1, g: 1, b: 1, a: 0}
   writeWholeWords: 0
